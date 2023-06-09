@@ -1,0 +1,60 @@
+header {
+  position: fixed;
+  top: 0;
+  color: white;
+  z-index: 2;
+  height: 80px;
+  width: 100%;
+  nav {
+    height: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > a {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 24px;
+      svg {
+        margin-right: 8px;
+      }
+    }
+
+    .nav-menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      & > li {
+        padding: 0 12px;
+        font-weight: 500;
+        &.social-link {
+          padding: 0;
+          & > a {
+            padding: 0 12px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+          }
+        }
+
+        .contact-button{
+            background-color: #000000;
+            color: white;
+            height: 45px;
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+      }
+    }
+  }
+}
