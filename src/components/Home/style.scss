@@ -1,0 +1,54 @@
+.wrapper_home {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../../images/wallpaper.webp");
+  animation: changeImage 12s infinite;
+  @keyframes changeImage {
+    0% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+
+    33.33% {
+      background-image: url("../../images/wallpaper-1.webp");
+    }
+
+    66.66% {
+      background-image: url("../../images/wallpaper-2.webp");
+    }
+
+    100% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+  }
+  z-index: 1;
+  .overlay {
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    opacity: 0.4;
+    z-index: -1;
+  }
+
+  .home_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    & > h1 {
+      font-weight: 600;
+      font-size: 28px;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    & > span {
+      font-size: 50px;
+    }
+  }
+}
