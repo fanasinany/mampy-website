@@ -2,14 +2,15 @@ import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import "../styles/globals.scss";
 import Home from "../components/Home";
-import Header from "../components/Header";
+import About from "../components/About";
+import Layout from "../components/Layout";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <main>
-      <Header/>
+    <Layout>
       <Home />
-    </main>
+      <About />
+    </Layout>
   );
 };
 

@@ -1,0 +1,16 @@
+.aboutwrapper {
+  display: flex;
+  height: 600px;
+  & > div {
+    flex-grow: 1;
+    &:first-child {
+      background-color: #1a292e;
+    }
+    &:nth-child(2) {
+  
+    }
+    &:last-child {
+     
+    }
+  }
+}

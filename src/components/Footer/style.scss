@@ -1,0 +1,11 @@
+.footer_wrapper {
+  padding: 32px;
+  margin: 0 auto;
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ded9d9;
+    padding-top: 16px;
+  }
+}

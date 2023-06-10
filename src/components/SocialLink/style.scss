@@ -1,0 +1,38 @@
+ul.socialLinkWrapper {
+  &.white {
+    a {
+      color: #ffffff;
+    }
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &.black {
+    a {
+      color: #000000;
+    }
+    &::after {
+      background-color: #000000;
+    }
+  }
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+  &::after {
+    content: "";
+    position: relative;
+    height: 1px;
+    bottom: -17px;
+    width: 120px;
+  }
+  li {
+    margin-right: 12px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
