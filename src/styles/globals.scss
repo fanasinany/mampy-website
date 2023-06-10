@@ -21,4 +21,21 @@ a {
 .sixCaps {
   font-family: "Six Caps", sans-serif;
   letter-spacing: 10px;
+  @media(max-width:700px){
+    letter-spacing: 4px;
+  }
+  @media(max-width:450px){
+    letter-spacing: 3px;
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  @media(max-width:700px){
+    font-size: 20px;
+  }
+  @media(max-width:450px){
+    font-size: 18px;
+  }
 }
