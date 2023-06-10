@@ -32,8 +32,25 @@ const Header = () => {
       };
     }
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        document.querySelector('.header-wrapper')?.classList.add('active');
+      } else {
+        document.querySelector('.header-wrapper')?.classList.remove('active');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header>
+    <header className="header-wrapper">
       <nav>
         <Link to="/">
           <MaterialSymbolsLinkedCameraOutline />
