@@ -1,3 +1,4 @@
+@import "../../styles/variables";
 header {
   position: fixed;
   top: 0;
@@ -5,7 +6,7 @@ header {
   z-index: 2;
   height: 80px;
   width: 100%;
-  padding: 0 32px;
+  padding: $paddingxy-value;
   transition: background-color 0.3s ease;
   &.active {
     background-color: #000000ed;
@@ -16,6 +17,7 @@ header {
   }
   @media (max-width: 768px) {
     height: 60px;
+    padding: $paddingxy-value-mobile;
   }
   nav {
     height: 100%;

@@ -1,3 +1,4 @@
+@import "../../styles/variables";
 .aboutwrapper {
   display: flex;
   height: 900px;
@@ -5,7 +6,7 @@
     flex: 1;
     &:first-child {
       background-color: #000000;
-      padding: 32px;
+      padding: $padding-value;
       color: #ffffff;
       position: relative;
       display: flex;
@@ -21,6 +22,9 @@
       ul {
         position: absolute;
         bottom: 32px;
+      }
+      @media (max-width: 768px) {
+        padding: $padding-value-mobile;
       }
     }
     &:nth-child(2) {
@@ -39,11 +43,14 @@
     }
 
     .text {
-      padding: 32px;
+      padding: $padding-value;
       flex-grow: 1;
       height: 30%;
       h3 {
         margin-top: 0;
+      }
+      @media (max-width: 768px) {
+        padding: $padding-value-mobile;
       }
     }
   }

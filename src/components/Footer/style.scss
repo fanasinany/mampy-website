@@ -1,5 +1,6 @@
+@import "../../styles/variables";
 .footer_wrapper {
-  padding: 32px;
+  padding: $padding-value;
   margin: 0 auto;
   & > div {
     display: flex;
@@ -7,6 +8,13 @@
     justify-content: space-between;
     border-top: 1px solid #ded9d9;
     padding-top: 16px;
+    & > span {
+      svg {
+        position: relative;
+        bottom: -4px;
+      }
+    }
+
     @media (max-width: 768px) {
       flex-direction: column;
       text-align: center;
@@ -14,11 +22,10 @@
         margin-top: 16px;
         font-size: 14px;
         line-height: 24px;
-        svg {
-          position: relative;
-          bottom: -4px;
-        }
       }
     }
+  }
+  @media (max-width: 768px) {
+    padding: $padding-value-mobile;
   }
 }
