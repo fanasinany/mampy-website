@@ -1,6 +1,6 @@
 @import "../../styles/variables";
 .contact_wrapper {
-  padding: 64px $padding-value 64px $padding-value;
+  padding: $padding-value;
 
   .contact_container {
     display: flex;
@@ -9,6 +9,11 @@
       & > h2 {
         font-size: 48px;
         margin: 0;
+        @media (max-width: 1365px) {
+          svg {
+            display: none;
+          }
+        }
         svg {
           position: relative;
           bottom: -9px;
@@ -39,36 +44,64 @@
 
   .contact_form {
     padding: $padding-value;
-    background-color: #003A4E;
+    background-color: #292929;
     width: 100%;
     max-width: 700px;
     margin-left: 100px;
     position: relative;
-    top: -100px;
-    &>form{
-      p{
+    top: -70px;
+    & > form {
+      p {
         margin-top: 0;
       }
 
-      .input-wrapper{
+      .input-wrapper {
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
         margin-top: 16px;
-        &>div{
+        & > div {
           width: calc(50% - 16px);
-          &:last-child{
+          &:last-child {
             width: 100%;
           }
+
+          @media (max-width: 500px) {
+            width: 100%;
+          }
+
         }
+      }
+
+      & > button {
+        background-color: white;
+        border: none;
+        height: 40px;
+        width: 200px;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 16px;
       }
     }
   }
 
   @media (max-width: 768px) {
-    padding: 32px $padding-value-mobile 32px $padding-value-mobile;
+    padding: $padding-value-mobile;
     .contact_form {
       padding: $padding-value-mobile;
+    }
+  }
+
+  @media (max-width: 830px) {
+    .contact_container{
+      flex-direction: column;
+      
+      .contact_form{
+        margin-left: 0;
+        top: 0;
+        margin-top: 32px;
+        max-width: unset;
+      }
     }
   }
 }

@@ -8,15 +8,14 @@ import InputCustom from "../InputCustom";
 
 const Contact = () => {
   const [value, setValue] = useState("");
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement>) =>{
-    if(e.target.value !== ""){
-        e.currentTarget.classList.add('not-vide')
+  const handleChange = (e: any) => {
+    if (e.target.value !== "") {
+      e.currentTarget.classList.add("not-vide");
+    } else {
+      e.currentTarget.classList.remove("not-vide");
     }
-    else{
-        e.currentTarget.classList.remove('not-vide')
-    }
-    setValue(e.target.value)
-}
+    setValue(e.target.value);
+  };
   return (
     <section id="contact" className="contact_wrapper">
       <div className="contact_container">
@@ -51,10 +50,17 @@ const Contact = () => {
               <InputCustom label="Email" name="email" />
               <InputCustom label="Subject" name="subject" />
               <div className="input-container">
-                <textarea name="message" id="message"  value={value} onChange={handleChange} rows={6}></textarea>
-                <label htmlFor="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message-text"
+                  value={value}
+                  onChange={handleChange}
+                  rows={6}
+                ></textarea>
+                <label htmlFor="message-text">Message</label>
               </div>
             </div>
+            <button>SEND</button>
           </form>
         </div>
       </div>

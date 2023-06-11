@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 .footer_wrapper {
   padding: $padding-value;
+  padding-top: 0;
   margin: 0 auto;
   & > div {
     display: flex;

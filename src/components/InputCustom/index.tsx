@@ -20,7 +20,7 @@ const InputCustom: FC<InputCustomProps & React.InputHTMLAttributes<HTMLInputElem
     }
   return (
     <div className="input-container">
-      <input type="text" name={name} value={value} onChange={handleChange}  {...inputProps}/>
+      <input type="text" id={name} value={value} onChange={handleChange}  {...inputProps}/>
       <label htmlFor={name}>{label} *</label>
     </div>
   );
