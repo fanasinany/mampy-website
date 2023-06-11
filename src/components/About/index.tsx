@@ -6,7 +6,7 @@ import img1 from "../../images/mampy1.webp";
 
 const About = () => {
   return (
-    <section className="aboutwrapper">
+    <section className="aboutwrapper" id="about">
       <div>
         <h2 className="sixCaps">
           MAMPIONONA

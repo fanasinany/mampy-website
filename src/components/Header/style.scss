@@ -49,7 +49,7 @@ header {
         &.social-link {
           padding: 0;
           & > a {
-            padding: 0 12px;
+            padding: 0 8px;
             svg {
               width: 20px;
               height: 20px;
@@ -71,11 +71,15 @@ header {
         &:last-of-type {
           padding-right: 0;
         }
+
+        @media(max-width: 840px){
+          padding: 0 8px;
+        }
       }
       &.mobileActive {
         display: none;
         flex-direction: column;
-        background-color: #434141a6;
+        background-color: #000000c7;
         width: 100%;
         position: absolute;
         left: 0;
@@ -87,6 +91,8 @@ header {
           text-align: center;
           .contact-button {
             width: 100%;
+            background-color: white;
+            color: #000000;
           }
         }
         &.active {

@@ -7,6 +7,8 @@ import Instagram from "../Icons/Instagram";
 import Email from "../Icons/Email";
 import SolarHamburgerMenuBroken from "../Icons/SolarHamburgerMenuBroken";
 import IconoirCancel from "../Icons/IconoirCancel";
+import Linkedin from "../Icons/Linkedin";
+import Youpic from "../Icons/Youpic";
 
 /* get windows width */
 function getCurrentDimension() {
@@ -36,16 +38,16 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
-        document.querySelector('.header-wrapper')?.classList.add('active');
+        document.querySelector(".header-wrapper")?.classList.add("active");
       } else {
-        document.querySelector('.header-wrapper')?.classList.remove('active');
+        document.querySelector(".header-wrapper")?.classList.remove("active");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -62,29 +64,48 @@ const Header = () => {
           }`}
         >
           <li>
-            <Link to="/">Home</Link>
+            <a onClick={() => setShowMenuMobile(false)} href="#home">
+              Home
+            </a>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link onClick={() => setShowMenuMobile(false)} to="/">
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link to="/">Portfolio</Link>
+            <a onClick={() => setShowMenuMobile(false)} href="#about">
+              About
+            </a>
           </li>
           <li className="social-link">
-            <a href="#">
+            <a
+              href="https://www.facebook.com/MampiononaRakotojaonaPhotography"
+              target="_blank"
+            >
               <Facebook />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/" target="_blank">
               <Instagram />
             </a>
-            <a href="#">
+            <a href="https://linkedin.com" target="_blank">
+              <Linkedin />
+            </a>
+            <a href="https://youpic.com/rakotomampionona12" target="_blank">
+              <Youpic />
+            </a>
+            <a href="mailto:rakotomampionona12@gmail.com">
               <Email />
             </a>
           </li>
           <li>
-            <Link to="/" className="contact-button">
+            <a
+              onClick={() => setShowMenuMobile(false)}
+              href="#contact"
+              className="contact-button"
+            >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
         {widthSize < 768 && (

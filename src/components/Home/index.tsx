@@ -3,7 +3,7 @@ import "./style.scss";
 
 function Home() {
   return (
-    <section>
+    <section id="home">
       <div className="wrapper_home">
         <div className="overlay"></div>
         <div className="home_container">
