@@ -93,4 +93,8 @@
       margin-top: 32px;
     }
   }
+
+  @media (max-width: 768px) {
+    padding: 32px $padding-value-mobile 32px $padding-value-mobile;
+  }
 }

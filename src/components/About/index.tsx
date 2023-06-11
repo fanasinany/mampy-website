@@ -16,7 +16,7 @@ const About = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
           asperiores quam magni animi error autem fuga doloremque at, ad facere!
         </p>
-        <SocialLink color="white" />
+        {/* <SocialLink color="white" /> */}
       </div>
       <div>
         <img src={img} alt="Mampy" />

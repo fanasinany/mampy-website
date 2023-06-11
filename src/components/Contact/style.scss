@@ -1,0 +1,74 @@
+@import "../../styles/variables";
+.contact_wrapper {
+  padding: 64px $padding-value 64px $padding-value;
+
+  .contact_container {
+    display: flex;
+    justify-content: center;
+    & > div {
+      & > h2 {
+        font-size: 48px;
+        margin: 0;
+        svg {
+          position: relative;
+          bottom: -9px;
+        }
+      }
+      & > span {
+        margin-top: 6px;
+        display: block;
+      }
+
+      .informations {
+        display: flex;
+        flex-direction: column;
+        margin-top: 32px;
+        & > * {
+          margin-top: 8px;
+          display: flex;
+          align-items: center;
+          & > svg {
+            margin-right: 8px;
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact_form {
+    padding: $padding-value;
+    background-color: #003A4E;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 100px;
+    position: relative;
+    top: -100px;
+    &>form{
+      p{
+        margin-top: 0;
+      }
+
+      .input-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        margin-top: 16px;
+        &>div{
+          width: calc(50% - 16px);
+          &:last-child{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 32px $padding-value-mobile 32px $padding-value-mobile;
+    .contact_form {
+      padding: $padding-value-mobile;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 import Layout from "../components/Layout";
 import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
@@ -12,6 +13,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Home />
       <Portfolio/> 
       <About />
+      <Contact />
     </Layout>
   );
 };
