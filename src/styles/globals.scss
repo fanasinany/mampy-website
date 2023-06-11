@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Six+Caps&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   font-family: "Raleway", sans-serif;
@@ -36,7 +40,7 @@ p {
   line-height: 24px;
 }
 
-h2{
+h2 {
   font-size: 32px;
 }
 
@@ -52,15 +56,15 @@ h1 {
 }
 
 input,
-textarea{
+textarea {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  &:focus-visible{
+  &:focus-visible {
     outline: none;
   }
 }
 
-button{
+button {
   font-family: "Raleway", sans-serif;
   border: none;
   cursor: pointer;
