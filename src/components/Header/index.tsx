@@ -35,7 +35,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
         document.querySelector('.header-wrapper')?.classList.add('active');
       } else {
         document.querySelector('.header-wrapper')?.classList.remove('active');

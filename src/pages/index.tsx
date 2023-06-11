@@ -4,11 +4,13 @@ import "../styles/globals.scss";
 import Home from "../components/Home";
 import About from "../components/About";
 import Layout from "../components/Layout";
+import Portfolio from "../components/Portfolio";
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <Home />
+      <Portfolio/> 
       <About />
     </Layout>
   );
