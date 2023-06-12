@@ -6,12 +6,18 @@ import About from "../components/About";
 import Layout from "../components/Layout";
 import Contact from "../components/Contact";
 import PortfolioSection from "../components/PortfolioSection";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IndexPage: React.FC<PageProps> = () => {
+  React.useEffect(() => {
+    AOS.init({});
+    AOS.refresh();
+  }, []);
   return (
     <Layout>
       <Home />
-      <PortfolioSection/> 
+      <PortfolioSection />
       <About />
       <Contact />
     </Layout>

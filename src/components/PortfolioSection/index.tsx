@@ -19,7 +19,7 @@ function PortfolioSection() {
       <div className="phototype-wrapper">
         <div className="item-wrapper">
           <div className="item">
-            <div style={{ backgroundImage: `url(${photo0})` }}>
+            <div data-aos="fade-right" style={{ backgroundImage: `url(${photo0})` }}>
               <div className="title-desc">
                 <span className="sixCaps">Landscape</span>
                 <p className="description-photo">
@@ -28,7 +28,7 @@ function PortfolioSection() {
                 </p>
               </div>
             </div>
-            <div style={{ backgroundImage: `url(${photo5})` }}>
+            <div data-aos="fade-right"  style={{ backgroundImage: `url(${photo5})` }}>
               <div className="title-desc">
                 <span className="sixCaps">Culinary</span>
                 <p className="description-photo">
@@ -38,7 +38,7 @@ function PortfolioSection() {
             </div>
           </div>
           <div className="item">
-            <div style={{ backgroundImage: `url(${photo2})` }}>
+            <div  data-aos="fade-up"  style={{ backgroundImage: `url(${photo2})` }}>
               <div className="title-desc">
                 <span className="sixCaps">Portrait</span>
                 <p className="description-photo">
@@ -48,13 +48,13 @@ function PortfolioSection() {
             </div>
           </div>
           <div className="item">
-            <div style={{ backgroundImage: `url(${photo})` }}>
+            <div data-aos="fade-left" style={{ backgroundImage: `url(${photo})` }}>
               <div className="title-desc">
                 <span className="sixCaps">Real estate</span>
                 <p className="description-photo">Real estate photography.</p>
               </div>
             </div>
-            <div style={{ backgroundImage: `url(${photo7})` }}>
+            <div data-aos="fade-left" style={{ backgroundImage: `url(${photo7})` }}>
               <div className="title-desc">
                 <span className="sixCaps">Wedding</span>
                 <p className="description-photo">
