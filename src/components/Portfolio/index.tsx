@@ -11,10 +11,61 @@ import photo6 from "../../images/portfolio-thumbnail/6.webp";
 import photo7 from "../../images/portfolio-thumbnail/7.webp";
 import { Link } from "gatsby";
 
-
 function Portfolio() {
   return (
-    <section>
+    <section id="portfolio">
+      <h2 className="sixCaps">Mampy's Portfolio</h2>
+      <p>The great work that I do.</p>
+      <div className="phototype-wrapper">
+        <div className="item-wrapper">
+          <div className="item">
+            <div style={{ backgroundImage: `url(${photo0})` }}>
+              <div className="title-desc">
+                <span className="sixCaps">Landscape</span>
+                <p className="description-photo">
+                  Mountains, forests, oceans, fields and other natural
+                  landscapes.
+                </p>
+              </div>
+            </div>
+            <div style={{ backgroundImage: `url(${photo5})` }}>
+              <div className="title-desc">
+                <span className="sixCaps">Culinary</span>
+                <p className="description-photo">
+                  Aesthetic and appetizing presentation of food and dishes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div style={{ backgroundImage: `url(${photo2})` }}>
+              <div className="title-desc">
+                <span className="sixCaps">Portrait</span>
+                <p className="description-photo">
+                  Capture people's characteristics and emotions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="item">
+            <div style={{ backgroundImage: `url(${photo})` }}>
+              <div className="title-desc">
+                <span className="sixCaps">Real estate</span>
+                <p className="description-photo">Real estate photography.</p>
+              </div>
+            </div>
+            <div style={{ backgroundImage: `url(${photo7})` }}>
+              <div className="title-desc">
+                <span className="sixCaps">Wedding</span>
+                <p className="description-photo">
+                  Photography specializing in capturing the moments and events
+                  of a wedding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="portfolio-wrapper">
         <div className="images">
           <img src={photo3} alt="Photos" />
@@ -38,9 +89,13 @@ function Portfolio() {
             quia qui veniam velit quidem blanditiis inventore possimus.
             Molestiae, est.
           </p>
-          <Link to="#" className="view-more">View more</Link>
+          <Link to="#" className="view-more">
+            View more
+          </Link>
         </div>
-        <Link to="#" className="view-more mobile-v">View more</Link>
+        <Link to="#" className="view-more mobile-v">
+          View more
+        </Link>
       </div>
     </section>
   );
