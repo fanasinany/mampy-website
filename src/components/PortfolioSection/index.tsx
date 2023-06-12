@@ -11,7 +11,7 @@ import photo6 from "../../images/portfolio-thumbnail/6.webp";
 import photo7 from "../../images/portfolio-thumbnail/7.webp";
 import { Link } from "gatsby";
 
-function Portfolio() {
+function PortfolioSection() {
   return (
     <section id="portfolio">
       <h2 className="sixCaps">Mampy's Portfolio</h2>
@@ -89,11 +89,11 @@ function Portfolio() {
             quia qui veniam velit quidem blanditiis inventore possimus.
             Molestiae, est.
           </p>
-          <Link to="#" className="view-more">
+          <Link to="/folio" className="view-more">
             View more
           </Link>
         </div>
-        <Link to="#" className="view-more mobile-v">
+        <Link to="/folio" className="view-more mobile-v">
           View more
         </Link>
       </div>
@@ -101,4 +101,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default PortfolioSection;

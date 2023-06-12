@@ -64,20 +64,20 @@ const Header = () => {
           }`}
         >
           <li>
-            <a onClick={() => setShowMenuMobile(false)} href="#home">
-              Home
-            </a>
-          </li>
-          <li>
             <Link onClick={() => setShowMenuMobile(false)} to="/">
-              Portfolio
+              Home
             </Link>
           </li>
           <li>
+            <Link onClick={() => setShowMenuMobile(false)} to="/folio">
+              Portfolio
+            </Link>
+          </li>
+          {/* <li>
             <a onClick={() => setShowMenuMobile(false)} href="#about">
               About
             </a>
-          </li>
+          </li> */}
           <li className="social-link">
             <a
               href="https://www.facebook.com/MampiononaRakotojaonaPhotography"
