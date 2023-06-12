@@ -7,14 +7,45 @@ import Layout from "../components/Layout";
 import Contact from "../components/Contact";
 import PortfolioSection from "../components/PortfolioSection";
 
-const IndexPage: React.FC<PageProps> = () => {
+const LoadingComponent = () => {
   return (
-    <Layout>
-      <Home />
-      <PortfolioSection/> 
-      <About />
-      <Contact />
-    </Layout>
+    <div className="overlay-loading">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  );
+};
+
+const IndexPage: React.FC<PageProps> = () => {
+  React.useEffect(() => {
+    const overlay = document.querySelector(".overlay-loading") as HTMLElement;
+
+    const handleLoad = () => {
+      overlay.classList.add("loaded");
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  return (
+    <>
+      <LoadingComponent />
+      <Layout>
+        <Home />
+        <PortfolioSection />
+        <About />
+        <Contact />
+      </Layout>
+    </>
   );
 };
 
