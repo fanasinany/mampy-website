@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { HeadFC } from "gatsby";
 import "../styles/folio.scss";
+import GalleryPhotos from "../components/GalleryPhotos";
 
 const FolioPage: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const FolioPage: React.FC = () => {
           </div>
         </div>
       </section>
+      <GalleryPhotos />
     </Layout>
   );
 };
