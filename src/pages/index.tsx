@@ -17,7 +17,9 @@ const IndexPage: React.FC<PageProps> = () => {
 
   React.useEffect(() => {
     var overlay = document.querySelector(".overlay-loading");
+    var bodyTag = document.querySelector("body");
     overlay?.classList.add("loaded");
+    bodyTag?.classList.remove("hidebody");
   }, []);
 
   return (

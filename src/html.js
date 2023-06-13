@@ -12,6 +12,10 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <style>{`
+
+        body.hidebody{
+          overflow-y: hidden;
+        }
        .overlay-loading {
         position: fixed;
         width: 100vw;
@@ -66,7 +70,7 @@ export default function HTML(props) {
       `}</style>
         {props.headComponents}
       </head>
-      <body {...props.bodyAttributes}>
+      <body {...props.bodyAttributes} class="hidebody">
         {props.preBodyComponents}
         <div class="overlay-loading">
           <div></div>
