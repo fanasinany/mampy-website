@@ -11,8 +11,8 @@ const FolioPage: React.FC = () => {
         <div className="wrapper_folio">
           <div className="overlay"></div>
           <div className="home_container">
-            <h1>Mampionona RAKOTOJAONA</h1>
-            <span className="sixCaps">PORTFOLIO - GALLERY</span>
+            <h1 data-aos="fade-down">Mampionona RAKOTOJAONA</h1>
+            <span  data-aos="fade-up" className="sixCaps">PORTFOLIO - GALLERY</span>
           </div>
         </div>
       </section>

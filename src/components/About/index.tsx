@@ -24,8 +24,7 @@ const About = () => {
           <h3 data-aos="fade-down">About me</h3>
           <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error
-            praesentium aspernatur? Amet provident quibusdam recusandae tenetur
-            libero veritatis iste harum ipsa.
+            praesentium aspernatur?
           </p>
         </div>
       </div>
