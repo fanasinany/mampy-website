@@ -10,9 +10,9 @@ header {
   transition: background-color 0.3s ease;
   &.active {
     background-color: #000000ed;
-    .contact-button{
-      background-color: white!important;
-      color: #000000!important;
+    .contact-button {
+      background-color: white !important;
+      color: #000000 !important;
     }
   }
   @media (max-width: 768px) {
@@ -72,31 +72,35 @@ header {
           padding-right: 0;
         }
 
-        @media(max-width: 840px){
+        @media (max-width: 840px) {
           padding: 0 8px;
         }
       }
-      &.mobileActive {
+
+      @media (max-width: 768px) {
         display: none;
-        flex-direction: column;
-        background-color: #000000c7;
-        width: 100%;
-        position: absolute;
-        left: 0;
-        top: 60px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        & > li {
-          padding: 12px;
+        &.mobileActive {
+          display: none;
+          flex-direction: column;
+          background-color: #000000c7;
           width: 100%;
-          text-align: center;
-          .contact-button {
+          position: absolute;
+          left: 0;
+          top: 60px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          & > li {
+            padding: 12px;
             width: 100%;
-            background-color: white;
-            color: #000000;
+            text-align: center;
+            .contact-button {
+              width: 100%;
+              background-color: white;
+              color: #000000;
+            }
           }
-        }
-        &.active {
-          display: flex;
+          &.active {
+            display: flex;
+          }
         }
       }
     }
