@@ -4,7 +4,6 @@ import "../styles/globals.scss";
 import Home from "../components/Home";
 import About from "../components/About";
 import Layout from "../components/Layout";
-import Contact from "../components/Contact";
 import PortfolioSection from "../components/PortfolioSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,7 +26,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <Home />
       <PortfolioSection />
       <About />
-      <Contact />
+      {/* <Contact /> */}
     </Layout>
   );
 };

@@ -15,7 +15,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         document.querySelector(".header-wrapper")?.classList.add("active");
       } else {
         document.querySelector(".header-wrapper")?.classList.remove("active");
@@ -47,6 +47,11 @@ const Header = () => {
               Portfolio
             </Link>
           </li>
+          <li>
+            <Link onClick={() => setShowMenuMobile(false)} to="/about">
+              About
+            </Link>
+          </li>
           <li className="social-link">
             <a
               href="https://www.facebook.com/MampiononaRakotojaonaPhotography"
@@ -68,13 +73,13 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a
+            <Link
               onClick={() => setShowMenuMobile(false)}
-              href="#contact"
+              to="/contact"
               className="contact-button"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
         <button

@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import "./style.scss";
 import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
 import image1 from "../../images/portfolio-thumbnail/1.webp";
 import image2 from "../../images/portfolio-thumbnail/2.webp";
 import image3 from "../../images/portfolio-thumbnail/3.webp";
@@ -83,6 +84,19 @@ const GalleryPhotos = () => {
     },
   ];
 
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+  const openLightbox = useCallback((event:any, { photo, index }:any) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  }, []);
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
+
   const [images, setImages] = useState<PhotoProps[]>([]);
   const [active, setActive] = useState("all");
   useEffect(() => {
@@ -148,7 +162,26 @@ const GalleryPhotos = () => {
         </li>
       </ul>
       <div>
-        <Gallery photos={images} margin={8} direction={"column"} />
+        <Gallery
+          photos={images}
+          margin={8}
+          onClick={openLightbox}
+          direction={"column"}
+        />
+        <ModalGateway>
+          {viewerIsOpen ? (
+            <Modal onClose={closeLightbox}>
+              <Carousel
+                currentIndex={currentImage}
+                views={images.map((x:any) => ({
+                  ...x,
+                  srcset: x.srcSet,
+                  caption: x.title,
+                }))}
+              />
+            </Modal>
+          ) : null}
+        </ModalGateway>
       </div>
     </section>
   );
