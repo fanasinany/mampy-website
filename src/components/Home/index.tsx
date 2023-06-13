@@ -7,8 +7,8 @@ function Home() {
       <div className="wrapper_home">
         <div className="overlay"></div>
         <div className="home_container">
-          <h1>Mampionona RAKOTOJAONA</h1>
-          <span className="sixCaps">Just passionate of good pictures</span>
+          <h1 data-aos="fade-down">Mampionona RAKOTOJAONA</h1>
+          <span data-aos="fade-up" className="sixCaps">Just passionate of good pictures</span>
           <div className="scroll-down">
             Scroll Down
             <div className="mouse_scroll">

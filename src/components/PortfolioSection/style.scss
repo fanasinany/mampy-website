@@ -27,7 +27,7 @@
       width: 250px;
       height: 250px;
       object-fit: cover;
-      transition: all 0.3s;
+      transition: filter 0.3s;
       &:hover {
         filter: grayscale(1);
       }
@@ -135,7 +135,7 @@
         justify-content: flex-end;
         padding: 16px;
         position: relative;
-        transition: all 0.3s;
+        transition: filter 0.3s;
         overflow: hidden;
         flex-direction: column;
         &::after {

@@ -20,7 +20,7 @@ function PortfolioSection() {
         <div className="item-wrapper">
           <div className="item">
             <div style={{ backgroundImage: `url(${photo0})` }}>
-              <div className="title-desc">
+              <div data-aos="fade-up"  className="title-desc">
                 <span className="sixCaps">Landscape</span>
                 <p className="description-photo">
                   Mountains, forests, oceans, fields and other natural
@@ -29,7 +29,7 @@ function PortfolioSection() {
               </div>
             </div>
             <div style={{ backgroundImage: `url(${photo5})` }}>
-              <div className="title-desc">
+              <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Culinary</span>
                 <p className="description-photo">
                   Aesthetic and appetizing presentation of food and dishes.
@@ -39,7 +39,7 @@ function PortfolioSection() {
           </div>
           <div className="item">
             <div style={{ backgroundImage: `url(${photo2})` }}>
-              <div className="title-desc">
+              <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Portrait</span>
                 <p className="description-photo">
                   Capture people's characteristics and emotions.
@@ -49,13 +49,13 @@ function PortfolioSection() {
           </div>
           <div className="item">
             <div style={{ backgroundImage: `url(${photo})` }}>
-              <div className="title-desc">
+              <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Real estate</span>
                 <p className="description-photo">Real estate photography.</p>
               </div>
             </div>
             <div style={{ backgroundImage: `url(${photo7})` }}>
-              <div className="title-desc">
+              <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Wedding</span>
                 <p className="description-photo">
                   Photography specializing in capturing the moments and events
@@ -67,7 +67,7 @@ function PortfolioSection() {
         </div>
       </div>
       <div className="portfolio-wrapper">
-        <div className="images">
+        <div className="images" data-aos="zoom-in">
           <img src={photo3} alt="Photos" />
           <img src={photo7} alt="Photos" />
           <img src={photo2} alt="Photos" />
@@ -78,7 +78,7 @@ function PortfolioSection() {
           <img src={photo0} alt="Photos" />
           <img src={photo1} alt="Photos" />
         </div>
-        <div className="textDescription">
+        <div className="textDescription" data-aos="zoom-in">
           <h2 className="sixCaps">Photography</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,

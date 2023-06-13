@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 const IndexPage: React.FC<PageProps> = () => {
   React.useEffect(() => {
-    AOS.init({duration: 800});
+    AOS.init({duration: 1000});
     AOS.refresh();
   }, []);
   return (
