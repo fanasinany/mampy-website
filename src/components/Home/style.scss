@@ -24,6 +24,60 @@
       background-image: url("../../images/wallpaper.webp");
     }
   }
+
+  @-webkit-keyframes changeImage {
+    0% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+
+    33.33% {
+      background-image: url("../../images/wallpaper-1.webp");
+    }
+
+    66.66% {
+      background-image: url("../../images/wallpaper-2.webp");
+    }
+
+    100% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+  }
+
+  @-moz-keyframes changeImage {
+    0% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+
+    33.33% {
+      background-image: url("../../images/wallpaper-1.webp");
+    }
+
+    66.66% {
+      background-image: url("../../images/wallpaper-2.webp");
+    }
+
+    100% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+  }
+
+  @-o-keyframes changeImage {
+    0% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+
+    33.33% {
+      background-image: url("../../images/wallpaper-1.webp");
+    }
+
+    66.66% {
+      background-image: url("../../images/wallpaper-2.webp");
+    }
+
+    100% {
+      background-image: url("../../images/wallpaper.webp");
+    }
+  }
   z-index: 1;
   .overlay {
     background-color: black;
@@ -54,10 +108,10 @@
     }
     & > span {
       font-size: 50px;
-      @media(max-width:700px){
+      @media (max-width: 700px) {
         font-size: 40px;
       }
-      @media(max-width:450px){
+      @media (max-width: 450px) {
         font-size: 30px;
       }
     }
