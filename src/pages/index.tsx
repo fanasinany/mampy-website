@@ -11,17 +11,13 @@ import "aos/dist/aos.css";
 
 const IndexPage: React.FC<PageProps> = () => {
   React.useEffect(() => {
-    AOS.init({duration: 1000});
+    AOS.init({ duration: 1000 });
     AOS.refresh();
   }, []);
 
   React.useEffect(() => {
     var overlay = document.querySelector(".overlay-loading");
-
-    window.addEventListener("load", function () {
-      overlay?.classList.add("loaded");
-  
-    });
+    overlay?.classList.add("loaded");
   }, []);
 
   return (
