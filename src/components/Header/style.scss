@@ -107,13 +107,19 @@ header {
   }
 
   .menu-burger {
-    background-color: transparent;
-    color: white;
-    border: none;
-    cursor: pointer;
-    svg {
-      width: 2em;
-      height: 2em;
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .menu-burger {
+      display: flex;
+      background-color: transparent;
+      color: white;
+      border: none;
+      cursor: pointer;
+      svg {
+        width: 2em;
+        height: 2em;
+      }
     }
   }
 }

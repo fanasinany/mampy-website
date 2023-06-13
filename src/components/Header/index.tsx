@@ -10,30 +10,8 @@ import IconoirCancel from "../Icons/IconoirCancel";
 import Linkedin from "../Icons/Linkedin";
 import Youpic from "../Icons/Youpic";
 
-/* get windows width */
-function getCurrentDimension() {
-  return window.innerWidth;
-}
-
 const Header = () => {
-  const [widthSize, setWidthSize] = useState(1000);
   const [showMenuMobile, setShowMenuMobile] = useState(false);
-
-  useEffect(() => {
-    const updateDimension = () => {
-      setWidthSize(getCurrentDimension());
-    };
-    updateDimension(); // Set initial value
-
-    // Only add event listener in the browser environment
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", updateDimension);
-
-      return () => {
-        window.removeEventListener("resize", updateDimension);
-      };
-    }
-  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,11 +36,7 @@ const Header = () => {
           <MaterialSymbolsLinkedCameraOutline />
           Mampi.
         </Link>
-        <ul
-          className={`nav-menu ${widthSize < 768 && "mobileActive"} ${
-            showMenuMobile && "active"
-          }`}
-        >
+        <ul className={`nav-menu mobileActive ${showMenuMobile && "active"}`}>
           <li>
             <Link onClick={() => setShowMenuMobile(false)} to="/">
               Home
@@ -73,11 +47,6 @@ const Header = () => {
               Portfolio
             </Link>
           </li>
-          {/* <li>
-            <a onClick={() => setShowMenuMobile(false)} href="#about">
-              About
-            </a>
-          </li> */}
           <li className="social-link">
             <a
               href="https://www.facebook.com/MampiononaRakotojaonaPhotography"
@@ -108,14 +77,12 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        {widthSize < 768 && (
-          <button
-            className="menu-burger"
-            onClick={() => setShowMenuMobile((current) => !current)}
-          >
-            {showMenuMobile ? <IconoirCancel /> : <SolarHamburgerMenuBroken />}
-          </button>
-        )}
+        <button
+          className="menu-burger"
+          onClick={() => setShowMenuMobile((current) => !current)}
+        >
+          {showMenuMobile ? <IconoirCancel /> : <SolarHamburgerMenuBroken />}
+        </button>
       </nav>
     </header>
   );
