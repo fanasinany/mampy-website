@@ -14,6 +14,16 @@ const IndexPage: React.FC<PageProps> = () => {
     AOS.init({duration: 1000});
     AOS.refresh();
   }, []);
+
+  React.useEffect(() => {
+    var overlay = document.querySelector(".overlay-loading");
+
+    window.addEventListener("load", function () {
+      overlay?.classList.add("loaded");
+  
+    });
+  }, []);
+
   return (
     <Layout>
       <Home />
