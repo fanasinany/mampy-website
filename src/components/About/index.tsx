@@ -8,21 +8,21 @@ const About = () => {
   return (
     <section className="aboutwrapper" id="about">
       <div>
-        <h2 className="sixCaps">
+        <h2 className="sixCaps" data-aos="fade-down">
           MAMPIONONA
           RAKOTOJAONA
         </h2>
-        <p>
+        <p data-aos="fade-up">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
           asperiores quam magni animi error autem fuga doloremque at, ad facere!
         </p>
         {/* <SocialLink color="white" /> */}
       </div>
       <div>
-        <img src={img} alt="Mampy" />
+        <img src={img} alt="Mampy" data-aos="fade-down"/>
         <div className="text">
-          <h3>About me</h3>
-          <p>
+          <h3 data-aos="fade-down">About me</h3>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error
             praesentium aspernatur? Amet provident quibusdam recusandae tenetur
             libero veritatis iste harum ipsa.
@@ -31,13 +31,13 @@ const About = () => {
       </div>
       <div>
         <div className="text">
-          <h3>I love what I do</h3>
-          <p>
+          <h3 data-aos="fade-down">I love what I do</h3>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error
             praesentium aspernatur? Amet provident quibusdam recusandae tenetur
           </p>
         </div>
-        <img src={img1} alt="Mampy" />
+        <img src={img1} alt="Mampy"  data-aos="fade-up"/>
       </div>
     </section>
   );

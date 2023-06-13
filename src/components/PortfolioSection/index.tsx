@@ -14,8 +14,8 @@ import { Link } from "gatsby";
 function PortfolioSection() {
   return (
     <section id="portfolio">
-      <h2 className="sixCaps">Mampy's Portfolio</h2>
-      <p>The great work that I do.</p>
+      <h2 className="sixCaps" data-aos="fade-down">Mampy's Portfolio</h2>
+      <p data-aos="fade-up">The great work that I do.</p>
       <div className="phototype-wrapper">
         <div className="item-wrapper">
           <div className="item">
