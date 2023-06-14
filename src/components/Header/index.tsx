@@ -38,17 +38,17 @@ const Header = () => {
         </Link>
         <ul className={`nav-menu mobileActive ${showMenuMobile && "active"}`}>
           <li>
-            <Link onClick={() => setShowMenuMobile(false)} to="/">
+            <Link activeClassName="active-link" onClick={() => setShowMenuMobile(false)} to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowMenuMobile(false)} to="/folio">
+            <Link activeClassName="active-link" onClick={() => setShowMenuMobile(false)} to="/folio">
               Portfolio
             </Link>
           </li>
           <li>
-            <Link onClick={() => setShowMenuMobile(false)} to="/about">
+            <Link activeClassName="active-link" onClick={() => setShowMenuMobile(false)} to="/about">
               About
             </Link>
           </li>
