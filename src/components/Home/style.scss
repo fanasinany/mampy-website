@@ -223,3 +223,12 @@
     opacity: 1;
   }
 }
+
+.dark-mode{
+  .wrapper_home {
+    .overlay {
+      background-color: white;
+      opacity: 0.01;
+    }
+  }
+}

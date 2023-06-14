@@ -77,3 +77,8 @@ button {
 main{
   min-height: 100vh;
 }
+
+body.dark-mode{
+  background-color: #fdfdfd;
+  color: black;
+}
