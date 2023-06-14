@@ -44,6 +44,10 @@
 
         img{
             object-fit: cover;
+            transition: filter 0.3s;
+            &:hover{
+                filter: grayscale(1);
+            }
         }
     }
 }

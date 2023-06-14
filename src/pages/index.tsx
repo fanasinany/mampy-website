@@ -26,7 +26,6 @@ const IndexPage: React.FC<PageProps> = () => {
       <Home />
       <PortfolioSection />
       <About />
-      {/* <Contact /> */}
     </Layout>
   );
 };

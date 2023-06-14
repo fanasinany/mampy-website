@@ -9,7 +9,7 @@ import photo4 from "../../images/portfolio-thumbnail/4.webp";
 import photo5 from "../../images/portfolio-thumbnail/5.webp";
 import photo6 from "../../images/portfolio-thumbnail/6.webp";
 import photo7 from "../../images/portfolio-thumbnail/7.webp";
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 
 function PortfolioSection() {
   return (
@@ -19,7 +19,7 @@ function PortfolioSection() {
       <div className="phototype-wrapper">
         <div className="item-wrapper">
           <div className="item">
-            <div style={{ backgroundImage: `url(${photo0})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo0})` }}>
               <div data-aos="fade-up"  className="title-desc">
                 <span className="sixCaps">Landscape</span>
                 <p className="description-photo">
@@ -28,7 +28,7 @@ function PortfolioSection() {
                 </p>
               </div>
             </div>
-            <div style={{ backgroundImage: `url(${photo5})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo5})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Culinary</span>
                 <p className="description-photo">
@@ -38,7 +38,7 @@ function PortfolioSection() {
             </div>
           </div>
           <div className="item">
-            <div style={{ backgroundImage: `url(${photo2})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo2})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Portrait</span>
                 <p className="description-photo">
@@ -48,13 +48,13 @@ function PortfolioSection() {
             </div>
           </div>
           <div className="item">
-            <div style={{ backgroundImage: `url(${photo})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Real estate</span>
                 <p className="description-photo">Real estate photography.</p>
               </div>
             </div>
-            <div style={{ backgroundImage: `url(${photo7})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo7})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Wedding</span>
                 <p className="description-photo">

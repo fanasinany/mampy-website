@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import SocialLink from "../SocialLink";
-import img from "../../images/mampy.webp";
+import img from "../../images/wallpaper.webp";
 import img1 from "../../images/mampy1.webp";
 
 const About = () => {

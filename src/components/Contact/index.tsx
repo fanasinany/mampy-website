@@ -38,7 +38,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <div className="contact_form" data-aos="zoom-in">
+        <div className="contact_form">
           <form action="">
             <p>
               FOR BOOKINGS, COMMERCIAL OR GENERAL ENQUIRIES - Please use the
