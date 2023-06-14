@@ -5,88 +5,82 @@
   color: white;
   position: relative;
   background-repeat: no-repeat;
-  background-image: url("../../images/wallpaper.webp");
+  background-image: url("../../images//homepage/best-of-three/1.webp");
   animation: changeImage 12s;
   @keyframes changeImage {
     0% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
 
     33.33% {
-      background-image: url("../../images/wallpaper-1.webp");
+      background-image: url("../../images//homepage/best-of-three/2.webp");
     }
 
     66.66% {
-      background-image: url("../../images/wallpaper-2.webp");
+      background-image: url("../../images//homepage/best-of-three/3.webp");
     }
 
     100% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
   }
 
   @-webkit-keyframes changeImage {
     0% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
 
     33.33% {
-      background-image: url("../../images/wallpaper-1.webp");
+      background-image: url("../../images//homepage/best-of-three/2.webp");
     }
 
     66.66% {
-      background-image: url("../../images/wallpaper-2.webp");
+      background-image: url("../../images//homepage/best-of-three/3.webp");
     }
 
     100% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
   }
 
   @-moz-keyframes changeImage {
     0% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
 
     33.33% {
-      background-image: url("../../images/wallpaper-1.webp");
+      background-image: url("../../images//homepage/best-of-three/2.webp");
     }
 
     66.66% {
-      background-image: url("../../images/wallpaper-2.webp");
+      background-image: url("../../images//homepage/best-of-three/3.webp");
     }
 
     100% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
   }
 
   @-o-keyframes changeImage {
     0% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
 
     33.33% {
-      background-image: url("../../images/wallpaper-1.webp");
+      background-image: url("../../images//homepage/best-of-three/2.webp");
     }
 
     66.66% {
-      background-image: url("../../images/wallpaper-2.webp");
+      background-image: url("../../images//homepage/best-of-three/3.webp");
     }
 
     100% {
-      background-image: url("../../images/wallpaper.webp");
+      background-image: url("../../images//homepage/best-of-three/1.webp");
     }
   }
   z-index: 1;
   .overlay {
     background-color: black;
-    // background: linear-gradient(
-    //   #000 0%,
-    //   rgba(0, 0, 0, 0) 6.68%,
-    //   rgba(0, 0, 0, 0.06) 92.89%,
-    //   #000 100%
-    // );
     opacity: 0.4;
     width: 100%;
     position: absolute;

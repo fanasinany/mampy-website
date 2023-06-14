@@ -2,16 +2,18 @@ import React, { useCallback, useEffect, useState } from "react";
 import "./style.scss";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import image1 from "../../images/portfolio-thumbnail/1.webp";
-import image2 from "../../images/portfolio-thumbnail/2.webp";
-import image3 from "../../images/portfolio-thumbnail/3.webp";
-import image4 from "../../images/portfolio-thumbnail/4.webp";
-import image5 from "../../images/portfolio-thumbnail/5.webp";
-import image6 from "../../images/portfolio-thumbnail/6.webp";
-import image7 from "../../images/portfolio-thumbnail/7.webp";
-import image8 from "../../images/wallpaper-1.webp";
-import image9 from "../../images/wallpaper-2.webp";
-import image10 from "../../images/wallpaper.webp";
+import corporate1 from "../../images/portfoliopage/corporate/1.webp";
+import culinary1 from "../../images/portfoliopage/culinary/1.webp";
+import portrait1 from "../../images/portfoliopage/portrait/1.webp";
+import portrait2 from "../../images/portfoliopage/portrait/2.webp";
+import portrait3 from "../../images/portfoliopage/portrait/3.webp";
+import landscape1 from "../../images/portfoliopage/landscape/1.webp";
+import landscape2 from "../../images/portfoliopage/landscape/2.webp";
+import landscape3 from "../../images/portfoliopage/landscape/3.webp";
+import landscape4 from "../../images/portfoliopage/landscape/4.webp";
+import studio1 from "../../images/portfoliopage/studio/1.webp";
+import wedding1 from "../../images/portfoliopage/wedding/1.webp";
+import wedding2 from "../../images/portfoliopage/wedding/2.webp";
 
 type PhotoProps = {
   src: string;
@@ -23,71 +25,83 @@ type PhotoProps = {
 const GalleryPhotos = () => {
   const photos = [
     {
-      src: image1,
-      width: 1,
-      height: 1,
-      category: "portrait",
-    },
-    {
-      src: image2,
-      width: 1,
-      height: 1,
-      category: "portrait",
-    },
-    {
-      src: image3,
-      width: 1,
-      height: 1,
-      category: "studio",
-    },
-    {
-      src: image4,
-      width: 1,
-      height: 1,
-      category: "wedding",
-    },
-    {
-      src: image5,
-      width: 1,
-      height: 1,
-      category: "studio",
-    },
-    {
-      src: image6,
-      width: 1,
-      height: 1,
-      category: "culinary",
-    },
-    {
-      src: image7,
-      width: 1,
-      height: 1,
-      category: "studio",
-    },
-    {
-      src: image8,
+      src: corporate1,
       width: 1,
       height: 1,
       category: "corporate",
     },
     {
-      src: image9,
+      src: culinary1,
+      width: 1,
+      height: 1,
+      category: "culinary",
+    },
+    {
+      src: portrait1,
+      width: 1,
+      height: 1,
+      category: "portrait",
+    },
+    {
+      src: portrait2,
+      width: 1,
+      height: 1,
+      category: "portrait",
+    },
+    {
+      src: portrait3,
+      width: 1,
+      height: 1,
+      category: "portrait",
+    },
+    {
+      src: landscape1,
       width: 1,
       height: 1,
       category: "landscape",
     },
     {
-      src: image10,
+      src: landscape2,
       width: 1,
       height: 1,
       category: "landscape",
+    },
+    {
+      src: landscape3,
+      width: 1,
+      height: 1,
+      category: "landscape",
+    },
+    {
+      src: landscape4,
+      width: 1,
+      height: 1,
+      category: "landscape",
+    },
+    {
+      src: studio1,
+      width: 1,
+      height: 1,
+      category: "studio",
+    },
+    {
+      src: wedding1,
+      width: 1,
+      height: 1,
+      category: "wedding",
+    },
+    {
+      src: wedding2,
+      width: 1,
+      height: 1,
+      category: "wedding",
     },
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback((event:any, { photo, index }:any) => {
+  const openLightbox = useCallback((event: any, { photo, index }: any) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
@@ -173,7 +187,7 @@ const GalleryPhotos = () => {
             <Modal onClose={closeLightbox}>
               <Carousel
                 currentIndex={currentImage}
-                views={images.map((x:any) => ({
+                views={images.map((x: any) => ({
                   ...x,
                   srcset: x.srcSet,
                   caption: x.title,

@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.scss";
 import SocialLink from "../SocialLink";
-import img from "../../images/wallpaper.webp";
-import img1 from "../../images/mampy1.webp";
+import lastphoto1 from "../../images/homepage/2-last-photos/1.webp";
+import lastphoto2 from "../../images/homepage/2-last-photos/2.webp";
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
         {/* <SocialLink color="white" /> */}
       </div>
       <div>
-        <img src={img} alt="Mampy" data-aos="fade-down"/>
+        <img src={lastphoto1} alt="Last Photo" data-aos="fade-down"/>
         <div className="text">
           <h3 data-aos="fade-down">About me</h3>
           <p data-aos="fade-up">
@@ -36,7 +36,7 @@ const About = () => {
             praesentium aspernatur? Amet provident quibusdam recusandae tenetur
           </p>
         </div>
-        <img src={img1} alt="Mampy"  data-aos="fade-up"/>
+        <img src={lastphoto2} alt="Last Photo"  data-aos="fade-up"/>
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { HeadFC } from "gatsby";
 import AOS from "aos";
 import "../styles/aboutpage.scss";
-import img from "../images/mampy.webp";
+import img from "../images/aboutpage/mampy.webp";
 
 const AboutPage: React.FC = () => {
   React.useEffect(() => {

@@ -1,14 +1,21 @@
 import React from "react";
 import "./style.scss";
-import photo from "../../images/wallpaper-2.webp";
-import photo0 from "../../images/wallpaper-1.webp";
-import photo1 from "../../images/portfolio-thumbnail/1.webp";
-import photo2 from "../../images/portfolio-thumbnail/2.webp";
-import photo3 from "../../images/portfolio-thumbnail/3.webp";
-import photo4 from "../../images/portfolio-thumbnail/4.webp";
-import photo5 from "../../images/portfolio-thumbnail/5.webp";
-import photo6 from "../../images/portfolio-thumbnail/6.webp";
-import photo7 from "../../images/portfolio-thumbnail/7.webp";
+import photocategory1 from "../../images/homepage/portfolio-category/1.webp";
+import photocategory2 from "../../images/homepage/portfolio-category/2.webp";
+import photocategory3 from "../../images/homepage/portfolio-category/3.webp";
+import photocategory4 from "../../images/homepage/portfolio-category/4.webp";
+import photocategory5 from "../../images/homepage/portfolio-category/5.webp";
+
+import photothumbnail1 from "../../images/homepage/9-photos/1.webp";
+import photothumbnail2 from "../../images/homepage/9-photos/2.webp";
+import photothumbnail3 from "../../images/homepage/9-photos/3.webp";
+import photothumbnail4 from "../../images/homepage/9-photos/4.webp";
+import photothumbnail5 from "../../images/homepage/9-photos/5.webp";
+import photothumbnail6 from "../../images/homepage/9-photos/6.webp";
+import photothumbnail7 from "../../images/homepage/9-photos/7.webp";
+import photothumbnail8 from "../../images/homepage/9-photos/8.webp";
+import photothumbnail9 from "../../images/homepage/9-photos/9.webp";
+
 import { Link, navigate } from "gatsby";
 
 function PortfolioSection() {
@@ -19,7 +26,7 @@ function PortfolioSection() {
       <div className="phototype-wrapper">
         <div className="item-wrapper">
           <div className="item">
-            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo0})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photocategory3})` }}>
               <div data-aos="fade-up"  className="title-desc">
                 <span className="sixCaps">Landscape</span>
                 <p className="description-photo">
@@ -28,7 +35,7 @@ function PortfolioSection() {
                 </p>
               </div>
             </div>
-            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo5})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photocategory2})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Culinary</span>
                 <p className="description-photo">
@@ -38,7 +45,7 @@ function PortfolioSection() {
             </div>
           </div>
           <div className="item">
-            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo2})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photocategory1})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Portrait</span>
                 <p className="description-photo">
@@ -48,13 +55,13 @@ function PortfolioSection() {
             </div>
           </div>
           <div className="item">
-            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photocategory4})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Real estate</span>
                 <p className="description-photo">Real estate photography.</p>
               </div>
             </div>
-            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photo7})` }}>
+            <div onClick={() => navigate('/folio')} style={{ backgroundImage: `url(${photocategory5})` }}>
               <div data-aos="fade-up" className="title-desc">
                 <span className="sixCaps">Wedding</span>
                 <p className="description-photo">
@@ -68,15 +75,15 @@ function PortfolioSection() {
       </div>
       <div className="portfolio-wrapper">
         <div className="images" data-aos="zoom-in">
-          <img src={photo3} alt="Photos" />
-          <img src={photo7} alt="Photos" />
-          <img src={photo2} alt="Photos" />
-          <img src={photo4} alt="Photos" />
-          <img src={photo6} alt="Photos" />
-          <img src={photo5} alt="Photos" />
-          <img src={photo} alt="Photos" />
-          <img src={photo0} alt="Photos" />
-          <img src={photo1} alt="Photos" />
+          <img src={photothumbnail1} alt="Photo thumbnail" />
+          <img src={photothumbnail2} alt="Photo thumbnail" />
+          <img src={photothumbnail3} alt="Photo thumbnail" />
+          <img src={photothumbnail4} alt="Photo thumbnail" />
+          <img src={photothumbnail5} alt="Photo thumbnail" />
+          <img src={photothumbnail6} alt="Photo thumbnail" />
+          <img src={photothumbnail7} alt="Photo thumbnail" />
+          <img src={photothumbnail8} alt="Photo thumbnail" />
+          <img src={photothumbnail9} alt="Photo thumbnail" />
         </div>
         <div className="textDescription" data-aos="zoom-in">
           <h2 className="sixCaps">Photography</h2>
