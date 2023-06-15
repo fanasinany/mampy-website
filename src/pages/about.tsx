@@ -11,6 +11,7 @@ const AboutPage: React.FC = () => {
     var bodyTag = document.querySelector("body");
     overlay?.classList.add("loaded");
     bodyTag?.classList.remove("hidebody");
+    bodyTag?.classList.add("inject-head");
   }, []);
   return (
     <Layout>

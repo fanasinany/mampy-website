@@ -143,6 +143,7 @@ header {
     &.active {
       background-color: #ffffff;
       color: black;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
       .contact-button {
         background-color: #000000 !important;
         color: #ffffff !important;
@@ -194,6 +195,39 @@ header {
               }
             }
           }
+        }
+      }
+    }
+    &.active {
+      @media (max-width: 768px) {
+        .menu-burger {
+          color: #000000;
+        }
+      }
+    }
+  }
+  &.inject-head {
+    header {
+      color: #000000;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      nav {
+        .nav-menu {
+          & > li {
+            & > a {
+              &.active-link {
+                &::after {
+                  background-color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        .menu-burger {
+          color: #000000;
         }
       }
     }

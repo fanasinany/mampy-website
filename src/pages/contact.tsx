@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { HeadFC } from "gatsby";
-import About from "../components/About";
-import AOS from "aos";
 import Contact from "../components/Contact";
 
 const ContactPage: React.FC = () => {
@@ -11,6 +9,7 @@ const ContactPage: React.FC = () => {
     var bodyTag = document.querySelector("body");
     overlay?.classList.add("loaded");
     bodyTag?.classList.remove("hidebody");
+    bodyTag?.classList.add("inject-head");
   }, []);
   return (
     <Layout>
