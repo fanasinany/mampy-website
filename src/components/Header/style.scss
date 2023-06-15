@@ -46,10 +46,10 @@ header {
       & > li {
         padding: 0 12px;
         font-weight: 500;
-        &>a{
-          &.active-link{
+        & > a {
+          &.active-link {
             position: relative;
-            &::after{
+            &::after {
               content: "";
               position: absolute;
               width: 100%;
@@ -138,5 +138,64 @@ header {
   }
 }
 
-.dark-mode{
+.light-mode {
+  header {
+    &.active {
+      background-color: #ffffff;
+      color: black;
+      .contact-button {
+        background-color: #000000 !important;
+        color: #ffffff !important;
+      }
+      nav {
+        .nav-menu {
+          & > li {
+            & > a {
+              &.active-link {
+                &::after {
+                  background-color: #000000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+      .nav-menu {
+        & > li {
+          & > a {
+            &.active-link {
+              &::after {
+                background-color: white;
+              }
+            }
+          }
+        }
+
+        @media (max-width: 768px) {
+          &.mobileActive {
+            background-color: #ffffff;
+            color: #000000;
+            & > li {
+              .contact-button {
+                background-color: #000000;
+                color: #ffffff;
+              }
+            }
+            & > li {
+              & > a {
+                &.active-link {
+                  &::after {
+                    background-color: #000000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
