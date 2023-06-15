@@ -15,7 +15,7 @@ header {
       color: #000000 !important;
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     height: 60px;
     padding: $paddingxy-value-mobile;
   }
@@ -86,12 +86,32 @@ header {
           padding-right: 0;
         }
 
+        .change-mode {
+          background-color: #1f3846;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 34px;
+          width: 34px;
+          border-radius: 100%;
+          svg {
+            height: 24px;
+            width: 24px;
+            transform: rotate(215deg);
+          }
+
+          @media(max-width:850px){
+            margin: 0 auto;
+          }
+        }
+
         @media (max-width: 840px) {
           padding: 0 8px;
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 850px) {
         display: none;
         &.mobileActive {
           display: none;
@@ -123,7 +143,7 @@ header {
   .menu-burger {
     display: none;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .menu-burger {
       display: flex;
       background-color: transparent;
@@ -143,7 +163,8 @@ header {
     &.active {
       background-color: #ffffff;
       color: black;
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
       .contact-button {
         background-color: #000000 !important;
         color: #ffffff !important;
@@ -173,9 +194,17 @@ header {
               }
             }
           }
+
+          .change-mode {
+            background-color: #212121;
+            color: white;
+            svg {
+              transform: rotate(0deg);
+            }
+          }
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 850px) {
           &.mobileActive {
             background-color: #ffffff;
             color: #000000;
@@ -199,7 +228,7 @@ header {
       }
     }
     &.active {
-      @media (max-width: 768px) {
+      @media (max-width: 850px) {
         .menu-burger {
           color: #000000;
         }
@@ -210,7 +239,8 @@ header {
     header {
       color: #000000;
       background-color: white;
-      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
       nav {
         .nav-menu {
           & > li {
@@ -225,7 +255,7 @@ header {
         }
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 850px) {
         .menu-burger {
           color: #000000;
         }

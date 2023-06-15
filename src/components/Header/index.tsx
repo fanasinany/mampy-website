@@ -9,9 +9,24 @@ import SolarHamburgerMenuBroken from "../Icons/SolarHamburgerMenuBroken";
 import IconoirCancel from "../Icons/IconoirCancel";
 import Linkedin from "../Icons/Linkedin";
 import Youpic from "../Icons/Youpic";
+import IconNight from "../Icons/IconNight";
+import IconDay from "../Icons/IconDay";
 
 const Header = () => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
+
+  const [isNight, setIsNight] = useState(true);
+
+  const changeMode = () => {
+    var bodyTag = document.querySelector("body");
+    if (bodyTag?.classList.contains("light-mode")) {
+      bodyTag?.classList.remove("light-mode");
+    } else {
+      bodyTag?.classList.add("light-mode");
+    }
+
+    setIsNight((current) => !current);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,17 +53,29 @@ const Header = () => {
         </Link>
         <ul className={`nav-menu mobileActive ${showMenuMobile && "active"}`}>
           <li>
-            <Link activeClassName="active-link" onClick={() => setShowMenuMobile(false)} to="/">
+            <Link
+              activeClassName="active-link"
+              onClick={() => setShowMenuMobile(false)}
+              to="/"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link activeClassName="active-link" onClick={() => setShowMenuMobile(false)} to="/folio">
+            <Link
+              activeClassName="active-link"
+              onClick={() => setShowMenuMobile(false)}
+              to="/folio"
+            >
               Portfolio
             </Link>
           </li>
           <li>
-            <Link activeClassName="active-link" onClick={() => setShowMenuMobile(false)} to="/about">
+            <Link
+              activeClassName="active-link"
+              onClick={() => setShowMenuMobile(false)}
+              to="/about"
+            >
               About
             </Link>
           </li>
@@ -80,6 +107,11 @@ const Header = () => {
             >
               Contact
             </Link>
+          </li>
+          <li>
+            <span className="change-mode" onClick={() => changeMode()}>
+              {isNight ? <IconNight /> : <IconDay />}
+            </span>
           </li>
         </ul>
         <button
