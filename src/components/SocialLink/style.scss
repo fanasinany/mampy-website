@@ -36,3 +36,24 @@ ul.socialLinkWrapper {
     }
   }
 }
+.light-mode {
+  ul.socialLinkWrapper {
+    &.white {
+      a {
+        color: #000000;
+      }
+      &::after {
+        background-color: #000000;
+      }
+    }
+
+    &.black {
+      a {
+        color: #000000;
+      }
+      &::after {
+        background-color: #000000;
+      }
+    }
+  }
+}
