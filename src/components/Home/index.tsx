@@ -1,14 +1,67 @@
 import React from "react";
 import "./style.scss";
+import { graphql, useStaticQuery } from "gatsby";
 
-function Home() {
+const Home = () => {
+  const bestofthree = useStaticQuery(graphql`
+    query {
+      allWpPost(
+        filter: {
+          categories: {
+            nodes: { elemMatch: { slug: { eq: "best-of-three" } } }
+          }
+        }
+      ) {
+        edges {
+          node {
+            featuredImage {
+              node {
+                mediaItemUrl
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const imagesbo3 = bestofthree.allWpPost.edges
+    .map(({ node }: any) => node.featuredImage?.node?.mediaItemUrl)
+    .filter(Boolean);
+
+  const styles = {
+    backgroundImage: `url(${imagesbo3[0]})`,
+    animation: "changeImage 12s",
+  };
+
+  const keyframes = `
+    @keyframes changeImage {
+      0% {
+        background-image: url(${imagesbo3[0]});
+      }
+
+      33.33% {
+        background-image: url(${imagesbo3[1]});
+      }
+
+      66.66% {
+        background-image: url(${imagesbo3[2]});
+      }
+
+      100% {
+        background-image: url(${imagesbo3[0]});
+      }
+    }
+  `;
   return (
     <section id="home">
-      <div className="wrapper_home">
+      <div className="wrapper_home" style={styles}>
         <div className="overlay"></div>
         <div className="home_container">
           <h1 data-aos="fade-down">Mampionona RAKOTOJAONA</h1>
-          <span data-aos="fade-up" className="sixCaps">Just passionate of good pictures</span>
+          <span data-aos="fade-up" className="sixCaps">
+            Just passionate of good pictures
+          </span>
           <div className="scroll-down">
             Scroll Down
             <div className="mouse_scroll">
@@ -20,9 +73,10 @@ function Home() {
             </div>
           </div>
         </div>
+        <style>{keyframes}</style>
       </div>
     </section>
   );
-}
+};
 
 export default Home;
