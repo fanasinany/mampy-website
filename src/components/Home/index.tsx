@@ -11,7 +11,7 @@ const Home = () => {
             nodes: { elemMatch: { slug: { eq: "best-of-three" } } }
           }
         }
-        sort: { fields: date, order: ASC }
+        sort: {date: ASC}
       ) {
         edges {
           node {

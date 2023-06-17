@@ -11,7 +11,7 @@ const About = () => {
             nodes: { elemMatch: { slug: { eq: "two-last-homepage" } } }
           }
         }
-        sort: { fields: date, order: ASC }
+        sort: {date: ASC}
       ) {
         edges {
           node {

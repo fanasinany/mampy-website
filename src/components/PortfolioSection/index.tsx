@@ -1,14 +1,10 @@
 import React from "react";
 import "./style.scss";
-import photocategory1 from "../../images/homepage/portfolio-category/1.webp";
-import photocategory2 from "../../images/homepage/portfolio-category/2.webp";
-import photocategory3 from "../../images/homepage/portfolio-category/3.webp";
-import photocategory4 from "../../images/homepage/portfolio-category/4.webp";
-import photocategory5 from "../../images/homepage/portfolio-category/5.webp";
-
-import { Link, graphql, navigate, useStaticQuery } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
+import ExtraitCategory from "../ExtraitCategory";
 
 const PortfolioSection = () => {
+  /* Query for 9 photos */
   const ninePhotos = useStaticQuery(graphql`
     query {
       allWpPost(
@@ -17,7 +13,7 @@ const PortfolioSection = () => {
             nodes: { elemMatch: { slug: { eq: "nine-square-homepage" } } }
           }
         }
-        sort: { fields: date, order: ASC }
+        sort: { date: ASC }
       ) {
         edges {
           node {
@@ -44,71 +40,7 @@ const PortfolioSection = () => {
         Mampy's Portfolio
       </h2>
       <p data-aos="fade-up">The great work that I do.</p>
-      <div className="phototype-wrapper">
-        <div className="item-wrapper">
-          <div className="item">
-            <div
-              onClick={() => navigate("/folio")}
-              style={{ backgroundImage: `url(${photocategory3})` }}
-            >
-              <div data-aos="fade-up" className="title-desc">
-                <span className="sixCaps">Landscape</span>
-                <p className="description-photo">
-                  Mountains, forests, oceans, fields and other natural
-                  landscapes.
-                </p>
-              </div>
-            </div>
-            <div
-              onClick={() => navigate("/folio")}
-              style={{ backgroundImage: `url(${photocategory2})` }}
-            >
-              <div data-aos="fade-up" className="title-desc">
-                <span className="sixCaps">Culinary</span>
-                <p className="description-photo">
-                  Aesthetic and appetizing presentation of food and dishes.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <div
-              onClick={() => navigate("/folio")}
-              style={{ backgroundImage: `url(${photocategory1})` }}
-            >
-              <div data-aos="fade-up" className="title-desc">
-                <span className="sixCaps">Portrait</span>
-                <p className="description-photo">
-                  Capture people's characteristics and emotions.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <div
-              onClick={() => navigate("/folio")}
-              style={{ backgroundImage: `url(${photocategory4})` }}
-            >
-              <div data-aos="fade-up" className="title-desc">
-                <span className="sixCaps">Real estate</span>
-                <p className="description-photo">Real estate photography.</p>
-              </div>
-            </div>
-            <div
-              onClick={() => navigate("/folio")}
-              style={{ backgroundImage: `url(${photocategory5})` }}
-            >
-              <div data-aos="fade-up" className="title-desc">
-                <span className="sixCaps">Wedding</span>
-                <p className="description-photo">
-                  Photography specializing in capturing the moments and events
-                  of a wedding.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ExtraitCategory />
       <div className="portfolio-wrapper">
         <div className="images" data-aos="zoom-in">
           {imagesNinePhotos.map((imagesninephoto: any, index: any) => {
