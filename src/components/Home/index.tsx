@@ -11,6 +11,7 @@ const Home = () => {
             nodes: { elemMatch: { slug: { eq: "best-of-three" } } }
           }
         }
+        sort: { fields: date, order: ASC }
       ) {
         edges {
           node {
@@ -25,31 +26,31 @@ const Home = () => {
     }
   `);
 
-  const imagesbo3 = bestofthree.allWpPost.edges
+  const imagesBoThree = bestofthree.allWpPost.edges
     .map(({ node }: any) => node.featuredImage?.node?.mediaItemUrl)
     .filter(Boolean);
 
   const styles = {
-    backgroundImage: `url(${imagesbo3[0]})`,
+    backgroundImage: `url(${imagesBoThree[0]})`,
     animation: "changeImage 12s",
   };
 
   const keyframes = `
     @keyframes changeImage {
       0% {
-        background-image: url(${imagesbo3[0]});
+        background-image: url(${imagesBoThree[0]});
       }
 
       33.33% {
-        background-image: url(${imagesbo3[1]});
+        background-image: url(${imagesBoThree[1]});
       }
 
       66.66% {
-        background-image: url(${imagesbo3[2]});
+        background-image: url(${imagesBoThree[2]});
       }
 
       100% {
-        background-image: url(${imagesbo3[0]});
+        background-image: url(${imagesBoThree[0]});
       }
     }
   `;

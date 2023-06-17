@@ -1,16 +1,40 @@
 import React from "react";
 import "./style.scss";
-import SocialLink from "../SocialLink";
-import lastphoto1 from "../../images/homepage/2-last-photos/1.webp";
-import lastphoto2 from "../../images/homepage/2-last-photos/2.webp";
+import { graphql, useStaticQuery } from "gatsby";
 
 const About = () => {
+  const twoLastPhotos = useStaticQuery(graphql`
+    query {
+      allWpPost(
+        filter: {
+          categories: {
+            nodes: { elemMatch: { slug: { eq: "two-last-homepage" } } }
+          }
+        }
+        sort: { fields: date, order: ASC }
+      ) {
+        edges {
+          node {
+            featuredImage {
+              node {
+                mediaItemUrl
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const imagesTwoPhotos = twoLastPhotos.allWpPost.edges.map(
+    ({ node }: any) => node.featuredImage?.node?.mediaItemUrl
+  );
+
   return (
     <section className="aboutwrapper" id="about">
       <div>
         <h2 className="sixCaps" data-aos="fade-down">
-          MAMPIONONA
-          RAKOTOJAONA
+          MAMPIONONA RAKOTOJAONA
         </h2>
         <p data-aos="fade-up">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
@@ -19,7 +43,11 @@ const About = () => {
         {/* <SocialLink color="white" /> */}
       </div>
       <div>
-        <img src={lastphoto1} alt="Last Photo" data-aos="fade-down"/>
+        <img
+          src={imagesTwoPhotos[0]}
+          alt="Last Photo"
+          data-aos="fade-down"
+        />
         <div className="text">
           <h3 data-aos="fade-down">About me</h3>
           <p data-aos="fade-up">
@@ -36,7 +64,11 @@ const About = () => {
             praesentium aspernatur? Amet provident quibusdam recusandae tenetur
           </p>
         </div>
-        <img src={lastphoto2} alt="Last Photo"  data-aos="fade-up"/>
+        <img
+          src={imagesTwoPhotos[1]}
+          alt="Last Photo"
+          data-aos="fade-up"
+        />
       </div>
     </section>
   );
