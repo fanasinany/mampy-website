@@ -1,10 +1,11 @@
 @import "../styles/variables";
 .aboutpage-wrapper {
   padding: $padding-value;
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  display: flex;
+  min-height: calc(100vh - 124px);
+  margin-top: 60px;
   & > div {
     max-width: 1300px;
     display: flex;
@@ -77,5 +78,6 @@
   }
   @media (max-width: 768px) {
     padding: $padding-value-mobile;
+    margin-top: 16px;
   }
 }

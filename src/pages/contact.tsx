@@ -8,8 +8,8 @@ const ContactPage: React.FC = () => {
     var overlay = document.querySelector(".overlay-loading");
     var bodyTag = document.querySelector("body");
     overlay?.classList.add("loaded");
+    bodyTag?.classList.add("main-full-h");
     bodyTag?.classList.remove("hidebody");
-    bodyTag?.classList.add("inject-head");
   }, []);
   return (
     <Layout>

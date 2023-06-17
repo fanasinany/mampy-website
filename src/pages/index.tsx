@@ -19,7 +19,7 @@ const IndexPage: React.FC<PageProps> = () => {
     var bodyTag = document.querySelector("body");
     overlay?.classList.add("loaded");
     bodyTag?.classList.remove("hidebody");
-    bodyTag?.classList.remove("inject-head");
+    bodyTag?.classList.remove("main-full-h");
   }, []);
 
   return (
