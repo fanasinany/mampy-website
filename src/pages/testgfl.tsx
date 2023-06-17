@@ -13,15 +13,11 @@ const TestgflPage: React.FC = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      allWpPost(
-        filter: {
-          categories: {
-            nodes: { elemMatch: { slug: { eq: "best-of-three" } } }
-          }
-        }
-      ) {
+      allWpPage {
         edges {
           node {
+            title
+            slug
             featuredImage {
               node {
                 mediaItemUrl
@@ -33,18 +29,16 @@ const TestgflPage: React.FC = () => {
     }
   `);
 
-  const images = data.allWpPost.edges
-    .map(({ node }: any) => node.featuredImage?.node?.mediaItemUrl)
-    .filter(Boolean);
-  return (
-    <Layout>
-      <div>
-        {images.map((imageUrl: any, index: any) => (
-          <img src={imageUrl} alt={`Image ${index}`} key={index} />
-        ))}
-      </div>
-    </Layout>
-  );
+  const images = data.allWpPage.edges.map(({ node }: any) => ({
+    title: node.title,
+    slug: node.slug,
+    url: node.featuredImage?.node?.mediaItemUrl,
+  }));
+
+  console.log(images);
+  return <Layout>
+    tEST
+  </Layout>;
 };
 
 export default TestgflPage;
