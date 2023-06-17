@@ -1,9 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { HeadFC } from "gatsby";
-import AOS from "aos";
+import { HeadFC, graphql, useStaticQuery } from "gatsby";
 import "../styles/aboutpage.scss";
-import img from "../images/aboutpage/mampy.webp";
 
 const AboutPage: React.FC = () => {
   React.useEffect(() => {
@@ -13,11 +11,36 @@ const AboutPage: React.FC = () => {
     bodyTag?.classList.remove("hidebody");
     bodyTag?.classList.add("inject-head");
   }, []);
+
+  const aboutphotoQuery = useStaticQuery(graphql`
+    query {
+      allWpPost(
+        filter: {
+          categories: { nodes: { elemMatch: { slug: { eq: "about-photo" } } } }
+        }
+        sort: { date: ASC }
+      ) {
+        edges {
+          node {
+            featuredImage {
+              node {
+                mediaItemUrl
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const aboutphoto = aboutphotoQuery.allWpPost.edges
+    .map(({ node }: any) => node.featuredImage?.node?.mediaItemUrl)
+    .filter(Boolean);
   return (
     <Layout>
       <section className="aboutpage-wrapper">
         <div>
-          <img src={img} alt="Mampy"/>
+          <img src={aboutphoto[0]} alt="Mampy" />
           <div className="textabout">
             <h2 className="sixCaps">Mampionona Rakotojaona</h2>
             <p>
