@@ -1,8 +1,11 @@
 import type { GatsbyConfig } from "gatsby";
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Mampi Photographe`,
+    title: `Mampii Photographe`,
     siteUrl: `https://www.yourdomain.tld`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
@@ -15,7 +18,13 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-wordpress",
       options: {
         // Base URL of your WordPress site
-        url: "http://localhost/bo-mampy/graphql",
+        url: process.env.BO_URL_GQL,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
       },
     },
   ],

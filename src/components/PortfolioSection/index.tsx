@@ -37,7 +37,7 @@ const PortfolioSection = () => {
   return (
     <section id="portfolio">
       <h2 className="sixCaps" data-aos="fade-down">
-        Mampy's Portfolio
+        Mampii Portfolio
       </h2>
       <p data-aos="fade-up">The great work that I do.</p>
       <ExtraitCategory />
@@ -54,15 +54,16 @@ const PortfolioSection = () => {
           })}
         </div>
         <div className="textDescription" data-aos="zoom-in">
-          <h2 className="sixCaps">Photography</h2>
+          <h2 className="sixCaps">Artistic approach</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
-            omnis debitis. Voluptates vel quis corporis ad. Cumque veritatis at
-            eius?
-            <br />
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius nulla
-            quia qui veniam velit quidem blanditiis inventore possimus.
-            Molestiae, est.
+            In every shot I capture, I weave the threads of a unique story,
+            where emotions come to life and precious moments are frozen for
+            eternity. Each image is a window onto my journey, revealing moments
+            of happiness, challenges overcome and dreams in the making. My lens
+            becomes my pen, and my photos become the words that compose the
+            visual chapters of my existence. Each shot tells a part of me,
+            fragments of emotions captured in a harmonious dance of light and
+            shadow.
           </p>
           <Link to="/folio" className="view-more">
             View more

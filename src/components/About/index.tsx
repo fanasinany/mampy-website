@@ -11,7 +11,7 @@ const About = () => {
             nodes: { elemMatch: { slug: { eq: "two-last-homepage" } } }
           }
         }
-        sort: {date: ASC}
+        sort: { date: ASC }
       ) {
         edges {
           node {
@@ -34,41 +34,31 @@ const About = () => {
     <section className="aboutwrapper" id="about">
       <div>
         <h2 className="sixCaps" data-aos="fade-down">
-          MAMPIONONA RAKOTOJAONA
+          A look at the world
         </h2>
-        <p data-aos="fade-up">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          asperiores quam magni animi error autem fuga doloremque at, ad facere!
-        </p>
+        <p data-aos="fade-up">Shots that tell the story of my inner journey</p>
         {/* <SocialLink color="white" /> */}
       </div>
       <div>
-        <img
-          src={imagesTwoPhotos[0]}
-          alt="Last Photo"
-          data-aos="fade-down"
-        />
+        <img src={imagesTwoPhotos[0]} alt="Last Photo" data-aos="fade-down" />
         <div className="text">
-          <h3 data-aos="fade-down">About me</h3>
+          <h3 data-aos="fade-down">Offer</h3>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error
-            praesentium aspernatur?
+            Promote your company or personal brand with our services.
           </p>
         </div>
       </div>
       <div>
         <div className="text">
-          <h3 data-aos="fade-down">I love what I do</h3>
+          <h3 data-aos="fade-down">Passion</h3>
           <p data-aos="fade-up">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error
-            praesentium aspernatur? Amet provident quibusdam recusandae tenetur
+            My passion for photography goes far beyond any material
+            considerations. Every moment I capture is a testament to my
+            commitment to conveying emotions, telling stories and immortalizing
+            the ephemeral beauty that surrounds us.
           </p>
         </div>
-        <img
-          src={imagesTwoPhotos[1]}
-          alt="Last Photo"
-          data-aos="fade-up"
-        />
+        <img src={imagesTwoPhotos[1]} alt="Last Photo" data-aos="fade-up" />
       </div>
     </section>
   );

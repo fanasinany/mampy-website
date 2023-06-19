@@ -86,10 +86,10 @@ const Header = () => {
             >
               <Facebook />
             </a>
-            <a href="https://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/m.a.m.p.i.i_/" target="_blank">
               <Instagram />
             </a>
-            <a href="https://linkedin.com" target="_blank">
+            <a href="https://www.linkedin.com/in/rakotojaona-mampionona-bb0563229/" target="_blank">
               <Linkedin />
             </a>
             <a href="https://youpic.com/rakotomampionona12" target="_blank">
