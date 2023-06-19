@@ -43,9 +43,9 @@ header {
       list-style: none;
       display: flex;
       align-items: center;
+      font-family: "Millena";
       & > li {
         padding: 0 12px;
-        font-weight: 500;
         & > a {
           &.active-link {
             position: relative;
@@ -80,7 +80,6 @@ header {
           display: flex;
           align-items: center;
           justify-content: center;
-          font-weight: 700;
         }
         &:last-of-type {
           padding-right: 0;

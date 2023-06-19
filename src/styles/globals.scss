@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Six+Caps&display=swap");
 
+@font-face {
+  font-family: "Millena";
+  src: local("Millena"),
+    url("../fonts/Millena.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Greating";
+  src: local("Greating"),
+    url("../fonts/Greating.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Vintage Signature";
+  src: local("Vintage Signature"),
+    url("../fonts/VintageSignature.otf") format("opentype");
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -10,9 +28,9 @@ body {
 
 html,
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Vintage Signature", sans-serif;
   margin: 0;
-  font-size: 16px;
+  font-size: 24px;
   background-color: #0d0f10;
   color: white;
 }
