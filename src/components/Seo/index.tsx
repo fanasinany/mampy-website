@@ -17,14 +17,12 @@ export const SEO: FC<SeoProps> = ({
   const {
     title: defaultTitle,
     description: defaultDescription,
-    image,
     siteUrl,
   } = useSiteMetadata();
 
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
     url: `${siteUrl}${pathname || ``}`,
   };
 
@@ -32,8 +30,6 @@ export const SEO: FC<SeoProps> = ({
     <>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
-
       <meta name="description" content={seo.description} />
       <meta name="title" content={seo.title} />
       <meta
@@ -45,7 +41,6 @@ export const SEO: FC<SeoProps> = ({
       <meta property="og:type" content="siteweb" />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
-      <meta property="og:image" content={seo.image} />
       <meta
         property="og:keywords"
         content="Mampii, Mampionona Rakotojaona, Mampi, Mampionona, Rakotojaona, Mampy"

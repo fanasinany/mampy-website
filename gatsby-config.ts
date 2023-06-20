@@ -8,7 +8,6 @@ const config: GatsbyConfig = {
     title: `Mampii Photographe`,
     description: `Mampionona Rakotojaona | Photographe Website`,
     siteUrl: `https://www.mampii.com/`,
-    image: "src/images/thumbnail.jpg"
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin

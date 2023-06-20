@@ -89,4 +89,4 @@ const AboutPage: React.FC = () => {
 
 export default AboutPage;
 
-export const Head: HeadFC = () => <SEO title="About Mampii" />;
+export const Head: HeadFC = () => <SEO title="About Mampii" pathname="about"/>;

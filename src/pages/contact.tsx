@@ -22,5 +22,5 @@ const ContactPage: React.FC = () => {
 export default ContactPage;
 
 export const Head: HeadFC = () => (
-  <SEO title="Contact Mampii"/>
+  <SEO title="Contact Mampii" pathname="contact"/>
 );
