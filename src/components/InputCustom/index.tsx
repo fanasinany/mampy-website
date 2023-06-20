@@ -4,23 +4,17 @@ import "./style.scss";
 type InputCustomProps = {
   label: string;
   name: string;
+  haveError: boolean;
 };
 
-const InputCustom: FC<InputCustomProps & React.InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement>> = ({label, name, ...inputProps}) => {
-    const [value, setValue] = useState("");
+const InputCustom: FC<
+  InputCustomProps &
+    React.InputHTMLAttributes<HTMLInputElement | HTMLTextAreaElement>
+> = ({ label, name, haveError, ...inputProps }) => {
 
-    const handleChange = (e:React.ChangeEvent<HTMLInputElement>) =>{
-        if(e.target.value !== ""){
-            e.currentTarget.classList.add('not-vide')
-        }
-        else{
-            e.currentTarget.classList.remove('not-vide')
-        }
-        setValue(e.target.value)
-    }
   return (
-    <div className="input-container">
-      <input type="text" id={name} value={value} onChange={handleChange}  {...inputProps}/>
+    <div className={`input-container ${haveError ? "error-input" : ""}`}>
+      <input id={name} name={name} {...inputProps}/>
       <label htmlFor={name}>{label} *</label>
     </div>
   );

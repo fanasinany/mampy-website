@@ -31,4 +31,15 @@
       font-size: 14px;
       transition: all 0.2s;
     }
+
+    &.error-input{
+      input,
+      textarea{
+        border-color: red;
+        
+      }
+      label{
+        color: red;
+      }
+    }
   }
