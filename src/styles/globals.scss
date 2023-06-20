@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "Helvetica Now Display";
-  src: local("Helvetica Now Display"),
-    url("../fonts/HelveticaNowDisplay.woff") format('woff');
-}
 
 @font-face {
   font-family: "Millena";
@@ -11,15 +6,15 @@
 }
 
 @font-face {
-  font-family: "Greating";
-  src: local("Greating"),
-    url("../fonts/Greating.ttf") format("truetype");
+  font-family: "Vogue";
+  src: local("Vogue"),
+    url("../fonts/Vogue.ttf") format('truetype');
 }
 
 @font-face {
-  font-family: "Vintage Signature";
-  src: local("Vintage Signature"),
-    url("../fonts/VintageSignature.otf") format("opentype");
+  font-family: "Megan";
+  src: local("Megan"),
+    url("../fonts/Megan.otf") format('opentype');
 }
 
 html {
@@ -32,9 +27,9 @@ body {
 
 html,
 body {
-  font-family: "Helvetica Now Display";
+  font-family: "Megan";
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
   background-color: #0d0f10;
   color: white;
 }
@@ -51,7 +46,7 @@ a {
 }
 
 .sixCaps {
-  font-family: "Vintage Signature";
+  font-family: "Vogue";
   font-weight: 400 !important;
   @media (max-width: 700px) {
     letter-spacing: 4px;
@@ -66,11 +61,10 @@ p {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h1 {
-  // font-weight: 700;
   font-size: 28px;
   @media (max-width: 700px) {
     font-size: 20px;

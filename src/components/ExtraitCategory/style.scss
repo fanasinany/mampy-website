@@ -47,15 +47,14 @@
         }
         .title-desc {
           position: absolute;
-          bottom: -48px;
+          bottom: -54px;
           transition: all 0.3s;
           z-index: 1;
           height: 95px;
           overflow: hidden;
           text-overflow: ellipsis;
           span {
-            font-size: 40px;
-            width: 100%;
+            font-size: 30px;
           }
 
           .description-photo {
@@ -125,7 +124,7 @@
             bottom: -72px;
             height: 110px;
             span {
-              font-size: 34px;
+              font-size: 26px;
             }
           }
         }

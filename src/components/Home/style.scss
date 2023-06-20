@@ -24,18 +24,20 @@
     height: 100%;
     text-align: center;
     & > h1 {
-      font-family: "Vintage Signature";
+      font-family: "Vogue";
       font-weight: 400 !important;
       margin: 0;
-      font-size: 50px;
+      font-size: 40px;
       @media (max-width: 700px) {
-        font-size: 40px;
+        font-size: 32px;
       }
     }
     & > span {
-      font-size: 50px;
+      margin-top: 16px;
+      font-size: 40px;
+      line-height: 34px;
       @media (max-width: 700px) {
-        font-size: 40px;
+        font-size: 32px;
       }
     }
   }
