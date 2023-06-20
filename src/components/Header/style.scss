@@ -28,17 +28,19 @@ header {
     align-items: center;
     justify-content: space-between;
     & > a {
-      // opacity: 0;
       text-transform: uppercase;
       display: flex;
       align-items: center;
       font-weight: 500;
       font-size: 24px;
-      svg {
-        margin-right: 8px;
-      }
-      img{
+      img {
         height: 55px;
+        &.icon-light{
+          display: none;
+        }
+        @media (max-width: 850px) {
+          height: 45px;
+        }
       }
     }
 
@@ -105,7 +107,7 @@ header {
             transform: rotate(215deg);
           }
 
-          @media(max-width:850px){
+          @media (max-width: 850px) {
             margin: 0 auto;
           }
         }
@@ -174,6 +176,16 @@ header {
         color: #ffffff !important;
       }
       nav {
+        & > a {
+          img {
+            &.icon-normal{
+              display: none;
+            }
+            &.icon-light{
+              display: block;
+            }
+          }
+        }
         .nav-menu {
           & > li {
             & > a {

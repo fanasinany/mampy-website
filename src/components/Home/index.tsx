@@ -60,8 +60,8 @@ const Home = () => {
         <div className="overlay"></div>
         <div className="home_container">
           <h1 data-aos="fade-down">Mampii .</h1>
-          <span data-aos="fade-up" className="sixCaps">
-          Immerse yourself in a visual journey where reality meets the imaginary.
+          <span data-aos="fade-up" className="sixCaps home-desc">
+          "Immerse yourself in a visual journey where reality meets the imaginary."
           </span>
           <div className="scroll-down">
             Scroll Down

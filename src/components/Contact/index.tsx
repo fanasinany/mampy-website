@@ -6,6 +6,7 @@ import Email from "../Icons/Email";
 import MaterialSymbolsLocationOnOutlineRounded from "../Icons/MaterialSymbolsLocationOnOutlineRounded";
 import InputCustom from "../InputCustom";
 import emailjs from "@emailjs/browser";
+import IcSharpCheck from "../Icons/IcSharpCheck";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -22,6 +23,9 @@ const Contact = () => {
   const [emailError, setEmailError] = useState(false);
   const [subjectError, setSubjectError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+
+  const [mailSend, setMailSend] = useState(false);
+  const [mailNotSend, setMailNotSend] = useState(false);
 
   const handleChangeFirstname = (e: any) => {
     if (e.target.value !== "") {
@@ -100,17 +104,17 @@ const Contact = () => {
         setloading(true);
         emailjs
           .sendForm(
-            "service_t7u914j",
-            "template_9rx5wo3",
+            "service_pvegg7c",
+            "template_sh2l4e9",
             form.current,
-            "mmyr7KX9ldWW28TT7"
+            "S0ZpRMium8vRLGUbh"
           )
-          .then(() =>{
+          .then(() => {
             setName("");
-            setFirstname("")
-            setEmail("")
-            setMessage("")
-            setSubject("")
+            setFirstname("");
+            setEmail("");
+            setMessage("");
+            setSubject("");
           })
           .finally(() => setloading(false));
       }
@@ -178,7 +182,11 @@ const Contact = () => {
                 haveError={subjectError}
                 type="text"
               />
-              <div className={`input-container ${messageError ? "error-input" : ""}`}>
+              <div
+                className={`input-container ${
+                  messageError ? "error-input" : ""
+                }`}
+              >
                 <textarea
                   name="user_message"
                   id="message-text"
@@ -198,9 +206,21 @@ const Contact = () => {
                 (*) Please fill in the empty fields.
               </span>
             )}
-            <button disabled={loading} type="submit" className={`${loading && "button--loading"}`}>
+            <button
+              disabled={loading}
+              type="submit"
+              className={`${loading && "button--loading"}`}
+            >
               {loading ? <span></span> : "SEND"}
             </button>
+            {mailSend && (
+              <div className="toast-message">
+                <span>
+                  <IcSharpCheck />
+                </span>
+                Message sent successfully
+              </div>
+            )}
           </form>
         </div>
       </div>

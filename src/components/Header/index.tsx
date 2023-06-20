@@ -12,6 +12,7 @@ import Youpic from "../Icons/Youpic";
 import IconNight from "../Icons/IconNight";
 import IconDay from "../Icons/IconDay";
 import icon from "../../images/icon.png";
+import iconDark from "../../images/icon-light.png";
 
 const Header = () => {
   const [showMenuMobile, setShowMenuMobile] = useState(false);
@@ -51,7 +52,8 @@ const Header = () => {
         <Link to="/">
           {/* <MaterialSymbolsLinkedCameraOutline />
           Mampi. */}
-          <img src={icon} alt="Logo Mampii" />
+          <img className="icon-normal" src={icon} alt="Logo Mampii" />
+          <img className="icon-light" src={iconDark} alt="Logo Mampii" />
         </Link>
         <ul className={`nav-menu mobileActive ${showMenuMobile && "active"}`}>
           <li>
