@@ -139,12 +139,12 @@ const Contact = () => {
               <MaterialSymbolsLocationOnOutlineRounded />
               Antananarivo, Madagascar
             </span>
-            <a href="tel:0344568422">
-              <MaterialSymbolsCallOutlineRounded />+ 261 34 85 888 66
+            <a href="tel:0328512630">
+              <MaterialSymbolsCallOutlineRounded />+261 32 85 126 30
             </a>
-            <a href="mailto:mampirak@gmail.com">
+            <a href="mailto:rakotomampionona12@gmail.com">
               <Email />
-              mampirak@gmail.com
+              rakotomampionona12@gmail.com
             </a>
           </div>
         </div>
