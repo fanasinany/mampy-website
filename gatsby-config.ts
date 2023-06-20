@@ -1,4 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -15,7 +18,7 @@ const config: GatsbyConfig = {
       resolve: "gatsby-source-wordpress",
       options: {
         // Base URL of your WordPress site
-        url: "https://admin.mampii.com/graphql",
+        url: process.env.BO_URL_GQL,
       },
     },
     {
