@@ -57,9 +57,9 @@ const FolioPage: React.FC = () => {
         <div className="wrapper_folio" style={styles}>
           <div className="overlay"></div>
           <div className="home_container">
-            <h1 data-aos="fade-down">Mampionona RAKOTOJAONA</h1>
+            <h1 data-aos="fade-down">Mampionona Rakotojaona</h1>
             <span data-aos="fade-up" className="sixCaps">
-              PORTFOLIO - GALLERY
+              Portfolio - Gallery
             </span>
           </div>
         </div>

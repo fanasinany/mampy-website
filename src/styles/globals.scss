@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Helvetica Now Display:wght@400;500;600;700&family=Six+Caps&display=swap");
+@font-face {
+  font-family: "Helvetica Now Display";
+  src: local("Helvetica Now Display"),
+    url("../fonts/HelveticaNowDisplay.woff") format('woff');
+}
 
 @font-face {
   font-family: "Millena";
@@ -70,9 +74,6 @@ h1 {
   font-size: 28px;
   @media (max-width: 700px) {
     font-size: 20px;
-  }
-  @media (max-width: 450px) {
-    font-size: 18px;
   }
 }
 
