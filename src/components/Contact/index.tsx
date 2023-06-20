@@ -7,6 +7,7 @@ import MaterialSymbolsLocationOnOutlineRounded from "../Icons/MaterialSymbolsLoc
 import InputCustom from "../InputCustom";
 import emailjs from "@emailjs/browser";
 import IcSharpCheck from "../Icons/IcSharpCheck";
+import IconoirCancel from "../Icons/IconoirCancel";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -115,6 +116,10 @@ const Contact = () => {
             setEmail("");
             setMessage("");
             setSubject("");
+            setMailSend(true);
+          })
+          .catch(() => {
+            setMailNotSend(true);
           })
           .finally(() => setloading(false));
       }
@@ -214,11 +219,20 @@ const Contact = () => {
               {loading ? <span></span> : "SEND"}
             </button>
             {mailSend && (
-              <div className="toast-message">
+              <div className="toast-message success">
                 <span>
                   <IcSharpCheck />
                 </span>
-                Message sent successfully
+                Message sent successfully!
+              </div>
+            )}
+
+            {mailNotSend && (
+              <div className="toast-message error">
+                <span>
+                  <IconoirCancel />
+                </span>
+                Mail not sent. Try again!
               </div>
             )}
           </form>
