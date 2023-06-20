@@ -15,9 +15,11 @@
       position: relative;
       h2 {
         max-width: 180px;
+        margin-bottom: 16px;
       }
       p {
         max-width: 350px;
+        margin: 0;
       }
       ul {
         position: absolute;
@@ -51,7 +53,10 @@
       flex-grow: 1;
       height: 30%;
       h3 {
-        margin-top: 0;
+        margin: 0 0 12px 0;
+        font-family: "Vintage Signature";
+        font-weight: 400;
+        font-size: 40px;
       }
       @media (max-width: 768px) {
         padding: $padding-value-mobile;

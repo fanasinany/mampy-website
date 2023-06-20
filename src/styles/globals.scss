@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Six+Caps&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Helvetica Now Display:wght@400;500;600;700&family=Six+Caps&display=swap");
 
 @font-face {
   font-family: "Millena";
@@ -28,9 +28,9 @@ body {
 
 html,
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Now Display";
   margin: 0;
-  font-size: 24px;
+  font-size: 16px;
   background-color: #0d0f10;
   color: white;
 }
@@ -47,8 +47,7 @@ a {
 }
 
 .sixCaps {
-  font-family: "Six Caps", sans-serif;
-  letter-spacing: 8px;
+  font-family: "Vintage Signature";
   font-weight: 400 !important;
   @media (max-width: 700px) {
     letter-spacing: 4px;
@@ -63,11 +62,11 @@ p {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 h1 {
-  font-weight: 700;
+  // font-weight: 700;
   font-size: 28px;
   @media (max-width: 700px) {
     font-size: 20px;
@@ -79,7 +78,7 @@ h1 {
 
 input,
 textarea {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Now Display";
   font-size: 14px;
   &:focus-visible {
     outline: none;
@@ -87,7 +86,7 @@ textarea {
 }
 
 button {
-  font-family: "Raleway", sans-serif;
+  font-family: "Helvetica Now Display";
   border: none;
   cursor: pointer;
 }
