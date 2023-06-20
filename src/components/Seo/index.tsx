@@ -2,10 +2,10 @@ import React, { FC } from "react";
 import { useSiteMetadata } from "../../hooks/use-site-metadata";
 
 type SeoProps = {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   pathname?: string;
-  children: any;
+  children?: any;
 };
 
 export const SEO: FC<SeoProps> = ({

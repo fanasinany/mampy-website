@@ -7,7 +7,7 @@ const config: GatsbyConfig = {
   siteMetadata: {
     title: `Mampii Photographe`,
     description: `Mampionona Rakotojaona | Photographe`,
-    siteUrl: `https://www.mampii.com`,
+    siteUrl: `https://www.mampii.com/`,
     image: "src/images/thumbnail.jpg"
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.

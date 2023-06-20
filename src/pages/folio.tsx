@@ -5,6 +5,7 @@ import "../styles/folio.scss";
 import GalleryPhotos from "../components/GalleryPhotos";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SEO } from "../components/Seo";
 
 const FolioPage: React.FC = () => {
   React.useEffect(() => {
@@ -72,5 +73,5 @@ const FolioPage: React.FC = () => {
 export default FolioPage;
 
 export const Head: HeadFC = () => (
-  <title>Portfolio - Mampionona Rakotojaona</title>
+  <SEO title="Portfolio Mampii"/>
 );

@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import PortfolioSection from "../components/PortfolioSection";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { SEO } from "../components/Seo";
 
 const IndexPage: React.FC<PageProps> = () => {
   React.useEffect(() => {
@@ -34,5 +35,5 @@ const IndexPage: React.FC<PageProps> = () => {
 export default IndexPage;
 
 export const Head: HeadFC = () => (
-  <title>Mampionona Rakotojaona | Photographe</title>
+  <SEO />
 );

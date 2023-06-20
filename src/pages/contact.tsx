@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import { HeadFC } from "gatsby";
 import Contact from "../components/Contact";
+import { SEO } from "../components/Seo";
 
 const ContactPage: React.FC = () => {
   React.useEffect(() => {
@@ -21,5 +22,5 @@ const ContactPage: React.FC = () => {
 export default ContactPage;
 
 export const Head: HeadFC = () => (
-  <title>Contact - Mampionona Rakotojaona</title>
+  <SEO title="Contact Mampii"/>
 );
