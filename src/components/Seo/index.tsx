@@ -30,7 +30,6 @@ export const SEO: FC<SeoProps> = ({
     <>
       <title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-      <meta name="description" content={seo.description} />
       <meta name="title" content={seo.title} />
       <meta
         name="keywords"
