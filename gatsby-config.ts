@@ -6,7 +6,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Mampii Photographe`,
-    description: `Mampionona Rakotojaona | Photographe`,
+    description: `Mampionona Rakotojaona | Photographe Website`,
     siteUrl: `https://www.mampii.com/`,
     image: "src/images/thumbnail.jpg"
   },
