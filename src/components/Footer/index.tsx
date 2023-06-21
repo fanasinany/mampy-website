@@ -10,8 +10,7 @@ function Footer() {
         <div>
           <SocialLink color="white"/>
           <span>
-            © Copyright 2023 Mampi - Made with <IcSharpFavorite/> by{" "}
-            <a href="https://ny-nivoarijaona.space" target="_blank">Ny Nivoarijaona</a>
+            © Copyright 2023 Mampii
           </span>
         </div>
       </div>
