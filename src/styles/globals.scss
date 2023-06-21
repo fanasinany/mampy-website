@@ -1,20 +1,13 @@
-
-@font-face {
-  font-family: "Millena";
-  src: local("Millena"),
-    url("../fonts/Millena.ttf") format("truetype");
-}
-
 @font-face {
   font-family: "Vogue";
   src: local("Vogue"),
-    url("../fonts/Vogue.ttf") format('truetype');
+    url("../fonts/Vogue.woff") format('woff');
 }
 
 @font-face {
-  font-family: "Megan";
-  src: local("Megan"),
-    url("../fonts/Megan.otf") format('opentype');
+  font-family: "ButlerLight";
+  src: local("ButlerLight"),
+    url("../fonts/Butler-Light.woff") format('woff');
 }
 
 html {
@@ -27,7 +20,7 @@ body {
 
 html,
 body {
-  font-family: "Megan";
+  font-family: "ButlerLight";
   margin: 0;
   font-size: 18px;
   background-color: #0d0f10;

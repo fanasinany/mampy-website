@@ -8,7 +8,7 @@ header {
   width: 100%;
   padding: $paddingxy-value;
   transition: background-color 0.3s ease;
-  font-size: 24px;
+  font-size: 16px;
   &.active {
     background-color: #000000ed;
     .contact-button {
@@ -50,7 +50,7 @@ header {
       list-style: none;
       display: flex;
       align-items: center;
-      font-family: "Millena";
+      font-family: "Vogue";
       & > li {
         padding: 0 12px;
         & > a {
