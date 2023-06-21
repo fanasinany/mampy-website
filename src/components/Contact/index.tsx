@@ -131,7 +131,7 @@ const Contact = () => {
       <div className="contact_container">
         <div>
           <h2 className="sixCaps">
-            Wanna work with me? <LongArrow />
+            Wanna work with me ! <LongArrow />
           </h2>
           <span>Or just say hello!</span>
           <div className="informations">

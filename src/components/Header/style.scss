@@ -8,7 +8,7 @@ header {
   width: 100%;
   padding: $paddingxy-value;
   transition: background-color 0.3s ease;
-  font-size: 16px;
+  font-size: 18px;
   &.active {
     background-color: #000000ed;
     .contact-button {
@@ -31,7 +31,6 @@ header {
       text-transform: uppercase;
       display: flex;
       align-items: center;
-      font-weight: 500;
       font-size: 24px;
       img {
         height: 55px;
@@ -50,10 +49,13 @@ header {
       list-style: none;
       display: flex;
       align-items: center;
-      font-family: "Vogue";
+      font-family: "Megan";
       & > li {
         padding: 0 12px;
         & > a {
+          text-transform: uppercase;
+          font-weight: 400;
+          letter-spacing: 1px;
           &.active-link {
             position: relative;
             &::after {
