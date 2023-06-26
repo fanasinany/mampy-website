@@ -14,6 +14,7 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-wordpress",
