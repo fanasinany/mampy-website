@@ -1,21 +1,17 @@
 @font-face {
   font-family: "ButlerLight";
-  src: local("ButlerLight"),
-    url("../fonts/Butler-Light.woff") format('woff');
+  src: local("ButlerLight"), url("../fonts/Butler-Light.woff") format("woff");
 }
 
 @font-face {
   font-family: "NewYork";
-  src: local("NewYork"),
-    url("../fonts/NewYork.woff") format('woff');
+  src: local("NewYork"), url("../fonts/NewYork.woff") format("woff");
 }
 
 @font-face {
   font-family: "Megan";
-  src: local("Megan"),
-    url("../fonts/Megan.woff") format('woff');
+  src: local("Megan"), url("../fonts/Megan.woff") format("woff");
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -112,4 +108,8 @@ body.light-mode {
   //  border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #242424;
+}
+
+* {
+  transition-delay: 0s!important;
 }
