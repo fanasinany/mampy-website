@@ -5,8 +5,8 @@ require("dotenv").config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `Mampii Photography`,
-    description: `Mampionona Rakotojaona | Photography Website`,
+    title: `Mampii`,
+    description: `Mampii | Photography Website`,
     siteUrl: `https://www.mampii.com/`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
