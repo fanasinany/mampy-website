@@ -73,5 +73,5 @@ const FolioPage: React.FC = () => {
 export default FolioPage;
 
 export const Head: HeadFC = () => (
-  <SEO title="Mampii Portfolio" pathname="folio"/>
+  <SEO title="Mampii - Portfolio" pathname="folio"/>
 );
