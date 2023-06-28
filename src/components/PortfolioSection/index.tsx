@@ -39,7 +39,6 @@ const PortfolioSection = () => {
       <h2 className="sixCaps" data-aos="fade-down">
         Mampii Portfolio
       </h2>
-      <p data-aos="fade-up">The great work that I do.</p>
       <ExtraitCategory />
       <div className="portfolio-wrapper">
         <div className="images" data-aos="zoom-in">
