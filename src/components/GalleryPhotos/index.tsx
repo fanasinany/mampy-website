@@ -59,33 +59,26 @@ const GalleryPhotos = () => {
   };
 
   const [images, setImages] = useState<PhotoProps[]>([]);
-  const [active, setActive] = useState("all");
-  useEffect(() => {
-    setImages(photos);
-  }, []);
+  const [active, setActive] = useState("");
+ 
   const changeType = (keytype: string) => {
     setActive(keytype);
-    if (keytype === "all") {
-      setImages(photos);
-    } else {
-      setImages(
-        photos.filter((value: any) => {
-          return value.category === keytype;
-        })
-      );
-    }
+    setImages(
+      photos.filter((value: any) => {
+        return value.category === keytype;
+      })
+    );
   };
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const cat = urlParams.get('cat');
+    changeType(cat !== null ? cat : uniqueCategories[0]);
+  }, []);
 
   return (
     <section className="container-gal">
       <ul>
-        <li
-          className={`${active === "all" && "active"}`}
-          onClick={() => changeType("all")}
-        >
-          all
-        </li>
-
         {uniqueCategories.map((item: string, index: any) => {
           return (
             <li

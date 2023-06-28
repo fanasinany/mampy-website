@@ -43,7 +43,7 @@ const ExtraitCategory = () => {
       <div className="item-wrapper">
         <div className="item">
           <div
-            onClick={() => navigate("/folio")}
+            onClick={() => navigate("/folio?cat=cinematic")}
             style={{ backgroundImage: `url(${category[0].mediaItemUrl})` }}
           >
             <div data-aos="fade-up" className="title-desc">
@@ -52,7 +52,7 @@ const ExtraitCategory = () => {
             </div>
           </div>
           <div
-            onClick={() => navigate("/folio")}
+            onClick={() => navigate("/folio?cat=culinary")}
             style={{ backgroundImage: `url(${category[1].mediaItemUrl})` }}
           >
             <div data-aos="fade-up" className="title-desc">
@@ -63,7 +63,7 @@ const ExtraitCategory = () => {
         </div>
         <div className="item">
           <div
-            onClick={() => navigate("/folio")}
+            onClick={() => navigate("/folio?cat=portrait")}
             style={{ backgroundImage: `url(${category[2].mediaItemUrl})` }}
           >
             <div data-aos="fade-up" className="title-desc">
@@ -74,7 +74,7 @@ const ExtraitCategory = () => {
         </div>
         <div className="item">
           <div
-            onClick={() => navigate("/folio")}
+            onClick={() => navigate("/folio?cat=real_estate")}
             style={{ backgroundImage: `url(${category[3].mediaItemUrl})` }}
           >
             <div data-aos="fade-up" className="title-desc">
@@ -83,7 +83,7 @@ const ExtraitCategory = () => {
             </div>
           </div>
           <div
-            onClick={() => navigate("/folio")}
+            onClick={() => navigate("/folio?cat=corporate")}
             style={{ backgroundImage: `url(${category[4].mediaItemUrl})` }}
           >
             <div data-aos="fade-up" className="title-desc">
