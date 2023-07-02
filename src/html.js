@@ -37,31 +37,38 @@ export default function HTML(props) {
       }
   
       .overlay-loading div:nth-child(1) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 630ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 630ms!important;
       }
   
       .overlay-loading div:nth-child(2) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 560ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 560ms!important;
       }
   
       .overlay-loading div:nth-child(3) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 490ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 490ms!important;
       }
   
       .overlay-loading div:nth-child(4) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 420ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 420ms!important;
       }
   
       .overlay-loading div:nth-child(5) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 350ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 350ms!important;
       }
   
       .overlay-loading div:nth-child(6) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 280ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 280ms!important;
       }
   
       .overlay-loading div:nth-child(7) {
-        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1) 210ms;
+        transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+        transition-delay: 210ms!important;
       }
   
       .overlay-loading.loaded div {
