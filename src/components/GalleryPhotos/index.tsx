@@ -30,10 +30,6 @@ const GalleryPhotos = () => {
     }
   `);
 
-  // function generateRandomNumber(min=3, max=4) {
-  //   return Math.floor(Math.random() * (max - min + 1)) + min;
-  // }
-
   const photos = data.allWpPage.edges.map(({ node }: any) => ({
     category: node.title.toLowerCase(),
     src: node.featuredImage?.node?.mediaItemUrl,
