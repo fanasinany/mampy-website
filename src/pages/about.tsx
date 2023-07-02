@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { HeadFC, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import "../styles/aboutpage.scss";
 import { SEO } from "../components/Seo";
 
@@ -39,6 +39,7 @@ const AboutPage: React.FC = () => {
     .filter(Boolean);
   return (
     <Layout>
+      <SEO title="Mampii - About" pathname="about" />
       <section className="aboutpage-wrapper">
         <div>
           <img src={aboutphoto[0]} alt="Mampy" />
@@ -88,5 +89,3 @@ const AboutPage: React.FC = () => {
 };
 
 export default AboutPage;
-
-export const Head: HeadFC = () => <SEO title="Mampii - About" pathname="about"/>;

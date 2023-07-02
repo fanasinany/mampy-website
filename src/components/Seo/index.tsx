@@ -1,5 +1,8 @@
 import React, { FC } from "react";
 import { useSiteMetadata } from "../../hooks/use-site-metadata";
+import { Helmet } from "react-helmet";
+import imageMeta from "../../images/mampii.webp";
+import iconTag from "../../images/icon-light.png";
 
 type SeoProps = {
   title?: string;
@@ -27,24 +30,34 @@ export const SEO: FC<SeoProps> = ({
   };
 
   return (
-    <>
+    <Helmet>
       <title>{seo.title}</title>
+      <link rel="icon" href={iconTag} />
       <meta name="description" content={seo.description} />
       <meta name="title" content={seo.title} />
       <meta
         name="keywords"
-        content="Mampii, Mampionona Rakotojaona, Mampi, Mampionona, Rakotojaona, Mampy"
+        content="Mampii,Mampy,Mampi,Mampionona Rakotojaona,Mampionona,Rakotojaona"
       />
 
       <meta property="og:URL" content={seo.url} />
-      <meta property="og:type" content="siteweb" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
       <meta
         property="og:keywords"
-        content="Mampii, Mampionona Rakotojaona, Mampi, Mampionona, Rakotojaona, Mampy"
+        content="Mampii,Mampy,Mampi,Mampionona Rakotojaona,Mampionona,Rakotojaona"
       />
+
+      <meta property="og:image" content={imageMeta} />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content={seo.url} />
+      <meta property="twitter:title" content={seo.title} />
+      <meta property="twitter:description" content={seo.description} />
+      <meta property="twitter:image" content={imageMeta} />
+
       {children}
-    </>
+    </Helmet>
   );
 };

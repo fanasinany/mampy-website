@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { HeadFC } from "gatsby";
 import Contact from "../components/Contact";
 import { SEO } from "../components/Seo";
 
@@ -14,13 +13,10 @@ const ContactPage: React.FC = () => {
   }, []);
   return (
     <Layout>
+      <SEO title="Mampii - Contact" pathname="contact" />
       <Contact />
     </Layout>
   );
 };
 
 export default ContactPage;
-
-export const Head: HeadFC = () => (
-  <SEO title="Mampii - Contact" pathname="contact"/>
-);

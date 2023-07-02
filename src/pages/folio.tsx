@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { HeadFC, graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import "../styles/folio.scss";
 import GalleryPhotos from "../components/GalleryPhotos";
 import AOS from "aos";
@@ -54,6 +54,7 @@ const FolioPage: React.FC = () => {
 
   return (
     <Layout>
+      <SEO title="Mampii - Portfolio" pathname="folio"/>
       <section className="portfolio-page">
         <div className="wrapper_folio" style={styles}>
           <div className="overlay"></div>
@@ -71,7 +72,3 @@ const FolioPage: React.FC = () => {
 };
 
 export default FolioPage;
-
-export const Head: HeadFC = () => (
-  <SEO title="Mampii - Portfolio" pathname="folio"/>
-);
