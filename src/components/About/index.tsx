@@ -8,7 +8,7 @@ const About = () => {
       allWpPost(
         filter: {
           categories: {
-            nodes: { elemMatch: { slug: { eq: "two-last-homepage" } } }
+            nodes: { elemMatch: { slug: { eq: "three-last-homepage" } } }
           }
         }
         sort: { date: ASC }
@@ -33,14 +33,18 @@ const About = () => {
   return (
     <section className="aboutwrapper" id="about">
       <div>
-        <h2 className="sixCaps" data-aos="fade-down">
-          A look at the world
-        </h2>
-        <p data-aos="fade-up">Shots that tell the story of my inner journey</p>
-        {/* <SocialLink color="white" /> */}
+        <div className="text">
+          <h3 className="sixCaps" data-aos="fade-down">
+            A look at the world
+          </h3>
+          <p data-aos="fade-up">
+            Shots that tell the story of my inner journey
+          </p>
+        </div>
+        <img src={imagesTwoPhotos[0]} alt="Last Photo" data-aos="fade-down" />
       </div>
       <div>
-        <img src={imagesTwoPhotos[0]} alt="Last Photo" data-aos="fade-down" />
+        <img src={imagesTwoPhotos[1]} alt="Last Photo" data-aos="fade-down" />
         <div className="text">
           <h3 data-aos="fade-down">Offer</h3>
           <p data-aos="fade-up">
@@ -58,7 +62,7 @@ const About = () => {
             the ephemeral beauty that surrounds us.
           </p>
         </div>
-        <img src={imagesTwoPhotos[1]} alt="Last Photo" data-aos="fade-up" />
+        <img src={imagesTwoPhotos[2]} alt="Last Photo" data-aos="fade-up" />
       </div>
     </section>
   );
