@@ -4,8 +4,7 @@
   height: 900px;
   & > div {
     flex: 1;
-    &:first-child {
-      background-color: #000000;
+    &:first-child {;
       color: #ffffff;
       position: relative;
       display: flex;
