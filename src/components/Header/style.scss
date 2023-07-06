@@ -8,7 +8,7 @@ header {
   width: 100%;
   padding: $paddingxy-value;
   transition: background-color 0.3s ease;
-  font-size: 18px;
+  font-size: 16px;
   &.active {
     background-color: #000000ed;
     .contact-button {
@@ -49,11 +49,11 @@ header {
       list-style: none;
       display: flex;
       align-items: center;
-      font-family: "Megan";
+      font-family: "Roboto Condensed";
       & > li {
         padding: 0 12px;
         & > a {
-          text-transform: uppercase;
+          // text-transform: uppercase;
           font-weight: 400;
           letter-spacing: 1px;
           &.active-link {

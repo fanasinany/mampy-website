@@ -13,6 +13,8 @@
   src: local("Megan"), url("../fonts/Megan.woff") format("woff");
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Source+Sans+3:wght@300;400;500;600;700;800;900&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,9 +25,9 @@ body {
 
 html,
 body {
-  font-family: "ButlerLight";
+  font-family: "Source Sans 3", sans-serif;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #0d0f10;
   color: white;
 }
@@ -42,9 +44,9 @@ a {
 }
 
 .sixCaps {
-  font-family: "Megan";
+  font-family: "Roboto Condensed";
   text-transform: uppercase;
-  font-weight: 400 !important;
+  font-weight: 700 !important;
   letter-spacing: 3px;
 }
 
@@ -111,5 +113,5 @@ body.light-mode {
 }
 
 * {
-  transition-delay: 0s!important;
+  transition-delay: 0s !important;
 }

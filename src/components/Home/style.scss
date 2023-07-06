@@ -24,8 +24,8 @@
     height: 100%;
     text-align: center;
     & > h1 {
-      font-family: "Megan";
-      font-weight: 400 !important;
+      font-family: "Roboto Condensed";
+      font-weight: 700 !important;
       margin: 0;
       font-size: 40px;
       text-transform: uppercase;
@@ -38,7 +38,9 @@
       margin-top: 16px;
       font-size: 18px;
       line-height: 22px;
-      letter-spacing: 4px;
+      letter-spacing: 2px;
+      text-transform: none;
+      font-weight: 400!important;
     }
   }
 
