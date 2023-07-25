@@ -31,19 +31,29 @@ const GalleryPhotos = () => {
   `);
 
   const photos = data.allWpPage.edges.map(({ node }: any) => ({
-    category: node.title.toLowerCase(),
+    category: node.title.toLowerCase() === "real estate" ? "real_estate" : node.title.toLowerCase(),
     src: node.featuredImage?.node?.mediaItemUrl,
     width: 1,
     height: 1,
   }));
-
+  
   /* Create list of category */
   const uniqueCategories = photos.reduce((categories: any, photo: any) => {
-    if (!categories.includes(photo.category)) {
-      categories.push(photo.category);
+    let category = photo.category;
+  
+    // Vérifier si la catégorie est "real estate" et la modifier en "real_estate" si c'est le cas
+    if (category === "real estate") {
+      category = "real_estate";
     }
+  
+    // Vérifier si la catégorie n'est pas déjà présente dans le tableau `categories`
+    if (!categories.includes(category)) {
+      categories.push(category);
+    }
+  
     return categories;
   }, []);
+
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
