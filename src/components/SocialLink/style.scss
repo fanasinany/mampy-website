@@ -27,6 +27,9 @@ ul.socialLinkWrapper {
     height: 1px;
     bottom: -17px;
     width: 100px;
+    @media (max-width: 550px) {
+      display: none;
+    }
   }
   li {
     margin-right: 12px;
@@ -34,6 +37,13 @@ ul.socialLinkWrapper {
       width: 20px;
       height: 20px;
     }
+  }
+
+  @media (max-width: 550px) {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 16px;
   }
 }
 .light-mode {

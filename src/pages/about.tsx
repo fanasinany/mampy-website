@@ -46,10 +46,7 @@ const AboutPage: React.FC = () => {
           <div className="textabout">
             <h2 className="sixCaps">Mampionona Rakotojaona</h2>
             <p>
-              Professional photographer from Madagascar, passionate and
-              creative, with a particular preference for portrait but still
-              versatile. Experiences with multiple collaboration with companies
-              and personalities from different fields.
+            My name is Rakotojaona Mampionona, photographer and entrepreneur. With a passion for colour and expertise in commercial, culinary, portrait and event photography, I began my journey alongside my studies at INSCAE. After graduating, I founded my own company, Mampii, in 2021. As a professional photographer, I offer a wide range of services, from corporate to image banks, including photo packshots, products and reports. Explore my portfolio to discover my captivating work and contact me to bring your photographic vision to life.
             </p>
 
             <div className="they-trust">

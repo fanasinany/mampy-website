@@ -43,6 +43,11 @@ const SocialLink: FC<SocialLinkProps> = ({ color }) => {
           <Email />
         </a>
       </li>
+      <li>
+        <a href="tel:0328512630">
+        +261 32 85 126 30
+        </a>
+      </li>
     </ul>
   );
 };
