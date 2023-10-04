@@ -9,6 +9,7 @@ import logo3 from "../images/logo3.png";
 import logo4 from "../images/logo4.png";
 import logo5 from "../images/logo5.png";
 import logo6 from "../images/logo6.png";
+import logo7 from "../images/logo7.png";
 
 const AboutPage: React.FC = () => {
   React.useEffect(() => {
@@ -83,6 +84,9 @@ const AboutPage: React.FC = () => {
                 </li>
                 <li>
                   <img src={logo6} alt="Logo" />
+                </li>
+                <li>
+                  <img src={logo7} alt="Logo" />
                 </li>
               </ul>
             </div>
