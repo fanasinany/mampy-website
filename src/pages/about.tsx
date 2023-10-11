@@ -10,6 +10,10 @@ import logo4 from "../images/logo4.png";
 import logo5 from "../images/logo5.png";
 import logo6 from "../images/logo6.png";
 import logo7 from "../images/logo7.png";
+import logo8 from "../images/logo8.png";
+import logo9 from "../images/logo9.png";
+import logo10 from "../images/logo10.png";
+import logo11 from "../images/logo11.png";
 
 const AboutPage: React.FC = () => {
   React.useEffect(() => {
@@ -87,6 +91,18 @@ const AboutPage: React.FC = () => {
                 </li>
                 <li>
                   <img src={logo7} alt="Logo" />
+                </li>
+                <li>
+                  <img src={logo8} alt="Logo" />
+                </li>
+                <li>
+                  <img src={logo9} alt="Logo" />
+                </li>
+                <li>
+                  <img src={logo10} alt="Logo" />
+                </li>
+                <li>
+                  <img src={logo11} alt="Logo" />
                 </li>
               </ul>
             </div>
