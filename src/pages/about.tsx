@@ -14,7 +14,7 @@ import logo8 from "../images/logo8.png";
 import logo9 from "../images/logo9.png";
 import logo10 from "../images/logo10.png";
 import logo11 from "../images/logo11.png";
-import logo12 from "../images/logo12.jpg;
+import logo12 from "../images/logo12.jpg";
 
 const AboutPage: React.FC = () => {
   React.useEffect(() => {
